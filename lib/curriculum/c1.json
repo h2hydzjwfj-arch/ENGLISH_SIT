@@ -1,0 +1,53 @@
+{
+  "book": "Advanced Grammar in Use · Martin Hewings · Cambridge",
+  "units": [
+    {
+      "id": "ling-93",
+      "title": "Non-defining с предлогами",
+      "level": "C1",
+      "grammar": "The person to whom I spoke. Formal style. The book about which he wrote.",
+      "exercises": [
+        {
+          "q": "The person to ___ I spoke was kind.",
+          "options": [
+            "who",
+            "whom",
+            "whose",
+            "that"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The book about ___ he wrote is famous.",
+          "options": [
+            "that",
+            "which",
+            "who",
+            "whose"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The company for ___ she works is big.",
+          "options": [
+            "that",
+            "which",
+            "who",
+            "whom"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Формальный вариант:",
+          "options": [
+            "the person I spoke to",
+            "the person to whom I spoke",
+            "the person that I spoke",
+            "оба первые"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  ]
+}

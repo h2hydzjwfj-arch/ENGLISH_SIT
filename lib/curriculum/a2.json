@@ -1,0 +1,1156 @@
+{
+  "book": "Essential Grammar in Use · Raymond Murphy · Cambridge",
+  "units": [
+    {
+      "id": "ling-01",
+      "title": "Present Continuous",
+      "level": "A2",
+      "grammar": "Действие происходит прямо сейчас. Форма: am/is/are + глагол-ing. I am reading. She is working. They are playing.",
+      "exercises": [
+        {
+          "q": "She ___ reading a book right now.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "They ___ playing football at the moment.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "be"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I ___ not sleeping.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ you listening to me?",
+          "options": [
+            "Am",
+            "Is",
+            "Are",
+            "Do"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-02",
+      "title": "Present Simple",
+      "level": "A2",
+      "grammar": "Регулярное действие, привычка, факт. I work every day. She works. Do/Does для вопросов и отрицаний.",
+      "exercises": [
+        {
+          "q": "He ___ to work every day.",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "gone"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "They ___ coffee in the morning.",
+          "options": [
+            "drinks",
+            "drink",
+            "drinking",
+            "drank"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ she speak English?",
+          "options": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I ___ not like tea.",
+          "options": [
+            "do",
+            "does",
+            "am",
+            "is"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-03",
+      "title": "Present Continuous vs Present Simple",
+      "level": "A2",
+      "grammar": "Continuous — сейчас. Simple — обычно/всегда. I am reading (сейчас) vs I read every day (обычно).",
+      "exercises": [
+        {
+          "q": "Look! The baby ___ .",
+          "options": [
+            "sleeps",
+            "is sleeping",
+            "sleep",
+            "slept"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She usually ___ at 7 o'clock.",
+          "options": [
+            "is waking up",
+            "wakes up",
+            "wake up",
+            "woke up"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I ___ to music right now.",
+          "options": [
+            "listen",
+            "am listening",
+            "listens",
+            "listened"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "We ___ to the gym every Saturday.",
+          "options": [
+            "are going",
+            "go",
+            "goes",
+            "went"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-04",
+      "title": "Present Continuous vs Present Simple 2 (state verbs)",
+      "level": "A2",
+      "grammar": "Некоторые глаголы НЕ употребляются в Continuous: know, like, love, want, need, understand, believe.",
+      "exercises": [
+        {
+          "q": "I ___ this answer.",
+          "options": [
+            "am knowing",
+            "know",
+            "knowing",
+            "knows"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She ___ chocolate.",
+          "options": [
+            "is loving",
+            "loves",
+            "love",
+            "loving"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ you understand me?",
+          "options": [
+            "Are",
+            "Do",
+            "Is",
+            "Does"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He ___ to go home now.",
+          "options": [
+            "is wanting",
+            "wants",
+            "want",
+            "wanting"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-05",
+      "title": "Past Simple",
+      "level": "A2",
+      "grammar": "Завершённое действие в прошлом. Правильные: +ed (worked). Неправильные: go→went, see→saw, have→had.",
+      "exercises": [
+        {
+          "q": "I ___ to London last year.",
+          "options": [
+            "go",
+            "went",
+            "gone",
+            "going"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She ___ her homework yesterday.",
+          "options": [
+            "do",
+            "did",
+            "does",
+            "doing"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "They ___ not come to the party.",
+          "options": [
+            "did",
+            "do",
+            "does",
+            "were"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ you see him last night?",
+          "options": [
+            "Did",
+            "Do",
+            "Does",
+            "Were"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-06",
+      "title": "Past Continuous",
+      "level": "A2",
+      "grammar": "Действие в процессе в определённый момент прошлого. was/were + V-ing. I was reading at 5pm.",
+      "exercises": [
+        {
+          "q": "I ___ TV at 8 o'clock yesterday.",
+          "options": [
+            "watched",
+            "was watching",
+            "watch",
+            "watches"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "They ___ football when it started to rain.",
+          "options": [
+            "played",
+            "were playing",
+            "play",
+            "plays"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She ___ not sleeping at midnight.",
+          "options": [
+            "was",
+            "were",
+            "did",
+            "does"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "What ___ you doing at 3pm?",
+          "options": [
+            "was",
+            "were",
+            "did",
+            "do"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-17",
+      "title": "Have и have got",
+      "level": "A2",
+      "grammar": "Have got = have (в британском). I have got a car = I have a car.",
+      "exercises": [
+        {
+          "q": "I ___ got a new phone.",
+          "options": [
+            "have",
+            "has",
+            "am",
+            "is"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She ___ got two brothers.",
+          "options": [
+            "have",
+            "has",
+            "is",
+            "am"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ you got a minute?",
+          "options": [
+            "Have",
+            "Has",
+            "Do",
+            "Are"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "They haven't ___ a car.",
+          "options": [
+            "got",
+            "get",
+            "gotten",
+            "getting"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-20",
+      "title": "Be going to",
+      "level": "A2",
+      "grammar": "Планы на будущее, намерения. I'm going to study tonight. It's going to rain.",
+      "exercises": [
+        {
+          "q": "I ___ going to visit my parents.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She ___ going to start a new job.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Look at those clouds! It ___ going to rain.",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "What ___ you going to do?",
+          "options": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-21",
+      "title": "Will / Shall 1",
+      "level": "A2",
+      "grammar": "Решение в момент речи, обещание, предсказание. I will help you. Shall I open the window?",
+      "exercises": [
+        {
+          "q": "I ___ help you with that.",
+          "options": [
+            "will",
+            "shall",
+            "am",
+            "do"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ I open the window?",
+          "options": [
+            "Will",
+            "Shall",
+            "Am",
+            "Do"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I think it ___ rain tomorrow.",
+          "options": [
+            "will",
+            "shall",
+            "am",
+            "is"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I promise I ___ be there.",
+          "options": [
+            "will",
+            "shall",
+            "am",
+            "do"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-22",
+      "title": "Will / Shall 2",
+      "level": "A2",
+      "grammar": "Разница will/shall. Shall — в вопросах-предложениях (Shall we go?).",
+      "exercises": [
+        {
+          "q": "___ we go to the cinema?",
+          "options": [
+            "Will",
+            "Shall",
+            "Do",
+            "Are"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I ___ call you tomorrow.",
+          "options": [
+            "will",
+            "shall",
+            "am",
+            "do"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ you help me, please?",
+          "options": [
+            "Will",
+            "Shall",
+            "Do",
+            "Are"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I don't think they ___ come.",
+          "options": [
+            "will",
+            "shall",
+            "are",
+            "do"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-37",
+      "title": "Can / Could / Would you...",
+      "level": "A2",
+      "grammar": "Просьбы: Can you...? (простое), Could you...? (вежливое), Would you mind...? (очень вежливое).",
+      "exercises": [
+        {
+          "q": "___ you pass me the salt, please?",
+          "options": [
+            "Can",
+            "Do",
+            "Are",
+            "Have"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ you please close the door?",
+          "options": [
+            "Could",
+            "Do",
+            "Are",
+            "Have"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Would you mind ___ the window?",
+          "options": [
+            "open",
+            "opening",
+            "to open",
+            "opened"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ I borrow your pen?",
+          "options": [
+            "Can",
+            "Do",
+            "Am",
+            "Are"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-49",
+      "title": "Вопросы 1 (общие)",
+      "level": "A2",
+      "grammar": "Общие вопросы: Do/Does/Did/Is/Are/Was/Were/Have/Has + подлежащее + глагол.",
+      "exercises": [
+        {
+          "q": "___ you like coffee?",
+          "options": [
+            "Do",
+            "Does",
+            "Are",
+            "Is"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ she work here?",
+          "options": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ you at home yesterday?",
+          "options": [
+            "Was",
+            "Were",
+            "Did",
+            "Do"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ he finished his work?",
+          "options": [
+            "Have",
+            "Has",
+            "Is",
+            "Does"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-50",
+      "title": "Вопросы 2 (специальные)",
+      "level": "A2",
+      "grammar": "Специальные вопросы: What/Where/When/Why/Who/How + вспомогательный глагол + подлежащее.",
+      "exercises": [
+        {
+          "q": "___ do you live?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "Why"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ are you crying?",
+          "options": [
+            "What",
+            "Where",
+            "Why",
+            "When"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ did you come home?",
+          "options": [
+            "What",
+            "When",
+            "Where",
+            "Why"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ is your name?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "How"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-51",
+      "title": "Вспомогательные глаголы",
+      "level": "A2",
+      "grammar": "Be, do, have — три семейства. Каждое работает по своим правилам в вопросах, отрицаниях, временах.",
+      "exercises": [
+        {
+          "q": "I ___ not like tea.",
+          "options": [
+            "am",
+            "do",
+            "have",
+            "is"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She ___ not happy.",
+          "options": [
+            "do",
+            "does",
+            "is",
+            "has"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We ___ not finished.",
+          "options": [
+            "do",
+            "does",
+            "have",
+            "is"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ you see him?",
+          "options": [
+            "Do",
+            "Does",
+            "Are",
+            "Have"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-67",
+      "title": "Исчисляемые и неисчисляемые",
+      "level": "A2",
+      "grammar": "Countable: apple/apples (можно посчитать). Uncountable: water, money, advice, information (нет мн. числа).",
+      "exercises": [
+        {
+          "q": "I need some ___ .",
+          "options": [
+            "advices",
+            "advice",
+            "an advice",
+            "advices"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She gave me a lot of ___ .",
+          "options": [
+            "informations",
+            "information",
+            "an information",
+            "informs"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "How ___ money do you have?",
+          "options": [
+            "many",
+            "much",
+            "few",
+            "a lot"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "There ___ some water in the glass.",
+          "options": [
+            "is",
+            "are",
+            "have",
+            "has"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-69",
+      "title": "A/an и The",
+      "level": "A2",
+      "grammar": "A/an — первое упоминание, один из многих. The — конкретный, известный. I saw a cat. The cat was black.",
+      "exercises": [
+        {
+          "q": "I saw ___ cat yesterday.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "some"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ cat was black.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "Some"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She is ___ doctor.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "some"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ doctor she visited was very kind.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "Some"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-81",
+      "title": "There is vs It is",
+      "level": "A2",
+      "grammar": "There is — что-то есть/существует. It is — идентификация/описание. There is a book on the table. It is a good book.",
+      "exercises": [
+        {
+          "q": "___ a book on the table.",
+          "options": [
+            "It is",
+            "There is",
+            "There are",
+            "They are"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ very cold today.",
+          "options": [
+            "There is",
+            "It is",
+            "There are",
+            "They are"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ many people in the park.",
+          "options": [
+            "There is",
+            "It is",
+            "There are",
+            "They are"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ a nice day.",
+          "options": [
+            "There is",
+            "It is",
+            "There are",
+            "They are"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-82",
+      "title": "Some и Any",
+      "level": "A2",
+      "grammar": "Some — утверждения и предложения. Any — вопросы и отрицания. I have some money. Do you have any money? I don't have any money.",
+      "exercises": [
+        {
+          "q": "I have ___ money.",
+          "options": [
+            "some",
+            "any",
+            "a",
+            "the"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Do you have ___ questions?",
+          "options": [
+            "some",
+            "any",
+            "a",
+            "the"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "There aren't ___ apples left.",
+          "options": [
+            "some",
+            "any",
+            "a",
+            "the"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Would you like ___ tea?",
+          "options": [
+            "some",
+            "any",
+            "a",
+            "the"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-98",
+      "title": "Good vs Well",
+      "level": "A2",
+      "grammar": "Good — прилагательное (перед существительным). Well — наречие (после глагола). He is a good singer. He sings well.",
+      "exercises": [
+        {
+          "q": "She's a ___ singer.",
+          "options": [
+            "good",
+            "well",
+            "goodly",
+            "best"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She sings ___ .",
+          "options": [
+            "good",
+            "well",
+            "goodly",
+            "best"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I don't feel ___ today.",
+          "options": [
+            "good",
+            "well",
+            "goodly",
+            "best"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "That's a ___ idea.",
+          "options": [
+            "good",
+            "well",
+            "goodly",
+            "best"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-102",
+      "title": "Сравнительная степень 1",
+      "level": "A2",
+      "grammar": "+er для коротких (tall → taller). More + для длинных (beautiful → more beautiful). Than — чем.",
+      "exercises": [
+        {
+          "q": "She's ___ than me.",
+          "options": [
+            "tall",
+            "taller",
+            "tallest",
+            "more tall"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "This book is ___ than that one.",
+          "options": [
+            "interesting",
+            "more interesting",
+            "interestingest",
+            "most interesting"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He runs ___ than me.",
+          "options": [
+            "fast",
+            "faster",
+            "fastest",
+            "more fast"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Today is ___ than yesterday.",
+          "options": [
+            "hot",
+            "hotter",
+            "hottest",
+            "more hot"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-105",
+      "title": "Превосходная степень",
+      "level": "A2",
+      "grammar": "+est для коротких (the tallest). Most + для длинных (the most beautiful). The + превосходная.",
+      "exercises": [
+        {
+          "q": "She's the ___ student in class.",
+          "options": [
+            "smart",
+            "smarter",
+            "smartest",
+            "most smart"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "This is the ___ film I've seen.",
+          "options": [
+            "good",
+            "better",
+            "best",
+            "goodest"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "He's the ___ person I know.",
+          "options": [
+            "kind",
+            "kinder",
+            "kindest",
+            "most kind"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "It's the ___ building in the city.",
+          "options": [
+            "tall",
+            "taller",
+            "tallest",
+            "most tall"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-106",
+      "title": "Порядок слов: сказуемое + дополнение",
+      "level": "A2",
+      "grammar": "В английском строгий порядок: Subject + Verb + Object. I love pizza (не pizza I love).",
+      "exercises": [
+        {
+          "q": "Правильный порядок:",
+          "options": [
+            "I pizza love",
+            "Pizza I love",
+            "I love pizza",
+            "Love I pizza"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She ___ .",
+          "options": [
+            "coffee likes",
+            "likes coffee",
+            "likes она",
+            "coffee she likes"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ he is.",
+          "options": [
+            "A doctor",
+            "Doctor a",
+            "Doctor"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Правильно:",
+          "options": [
+            "reads he books",
+            "he reads books",
+            "books he reads",
+            "reads books he"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-118",
+      "title": "At / On / In (время)",
+      "level": "A2",
+      "grammar": "At — точное время (at 5pm). On — день (on Monday). In — месяц/год/утро (in May, in 2020, in the morning).",
+      "exercises": [
+        {
+          "q": "I wake up ___ 7am.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "See you ___ Monday.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I was born ___ 1990.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She works ___ the morning.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-119",
+      "title": "In / At / On (место)",
+      "level": "A2",
+      "grammar": "In — внутри (in the room). At — точка (at the door, at school). On — на поверхности (on the table).",
+      "exercises": [
+        {
+          "q": "She's ___ the kitchen.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "I'll meet you ___ the station.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The book is ___ the table.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He's ___ school.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "for"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

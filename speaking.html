@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaking — iomaenglish</title>
+<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/speaking.css?v=3">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left"><a href="/dashboard" class="back-link">← Dashboard</a></div>
+  <div class="brand">ioma<span>english</span></div>
+  <div class="topbar-right"><button id="themeToggle" class="theme-btn" aria-label="Theme"><svg viewBox="0 0 24 24"><g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g><path class="icon-moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></div>
+</header>
+<main class="spk-shell">
+  <div class="spk-head">
+    <div class="sh-eyebrow">Speaking Lab</div>
+    <h1>Практика речи</h1>
+    <p>Нажмите «Говорить» — расскажите 30–60 секунд. AI оценит беглость, лексику и грамматику.</p>
+  </div>
+  <div class="spk-prompt" id="spkPrompt">Loading topic...</div>
+  <div class="spk-recorder">
+    <button class="spk-btn" id="spkBtn"><svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="6" fill="currentColor"/></svg><span id="spkLabel">Говорить</span></button>
+    <div class="spk-timer" id="spkTimer">00:00</div>
+  </div>
+  <div class="spk-transcript" id="spkTranscript" hidden>
+    <div class="st-label">Transcript</div>
+    <div class="st-text" id="stText"></div>
+    <button class="btn-primary" id="checkBtn">Проверить с AI</button>
+  </div>
+  <div class="spk-feedback" id="spkFeedback" hidden></div>
+  <button class="btn-ghost" id="newTopicBtn" style="margin-top:24px">Другая тема</button>
+</main>
+<script src="/speaking.js?v=3" defer></script>
+<script src="/tts.js?v=2" defer></script>
+<script src="/interactions.js?v=3" defer></script>
+<script src="/robot.js?v=10" defer></script>
+</body>
+</html>

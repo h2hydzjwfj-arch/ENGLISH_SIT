@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iomaenglish — private English tutoring</title>
+<link rel="stylesheet" href="/styles.css?v=20">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <button id="themeToggle" class="theme-btn" aria-label="Theme" title="Theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g><path class="icon-moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <span>Тема</span>
+    </button>
+  </div>
+  <div class="brand">ioma<span>english</span></div>
+  <div class="topbar-right">
+    <div class="level-badge" id="levelBadge" hidden>
+      <div class="level-pill"><b id="levelCode">A1</b></div>
+      <div class="level-progress-wrap">
+        <div class="level-progress-bar"><div class="level-progress-fill" id="levelFill" style="width:0%"></div></div>
+        <div class="level-progress-text"><span id="levelLabel">Beginner</span><span id="levelPercent">0%</span></div>
+      </div>
+    </div>
+    <a class="cta-mini" href="/test" id="takeTestBtn">Пройти тест</a>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="hero-copy">
+    <h1>Говорите по-английски<br><span class="accent">с абсолютной свободой</span></h1>
+    <p class="lede">Персональная программа на основе Cambridge и Oxford. Искусственный интеллект определяет ваш уровень и ведёт к совершенству — шаг за шагом.</p>
+    <div class="hero-actions">
+      <a href="/test" class="btn-primary">
+        Пройти диагностику
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#method" class="btn-ghost">О методике</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>5</b><span>навыков<br>проверяются</span></div>
+      <div class="stat"><b>6</b><span>уровней<br>CEFR</span></div>
+      <div class="stat"><b>∞</b><span>практики<br>без ограничений</span></div>
+    </div>
+  </div>
+</main>
+
+<section class="features" id="features">
+  <h2>Программа обучения</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-num">01 / GRAMMAR</div>
+      <h3>Грамматика</h3>
+      <p>Essential, English и Advanced Grammar in Use — все три книги Murphy в одной системе. Объяснения, упражнения, проверка AI.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">02 / SPEAKING</div>
+      <h3>Говорение</h3>
+      <p>Голосовые практики с распознаванием речи. AI оценивает беглость, произношение и лексику, предлагает улучшения.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">03 / LISTENING</div>
+      <h3>Аудирование</h3>
+      <p>Аутентичные аудио: BBC, Cambridge, деловые диалоги. Транскрипция, вопросы на понимание, адаптивная сложность.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">04 / READING</div>
+      <h3>Чтение</h3>
+      <p>Oxford Bookworms, Cambridge Readers, The Guardian, Financial Times. Разбор лексики и смысла с AI-наставником.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">05 / WRITING</div>
+      <h3>Письмо</h3>
+      <p>Эссе, review, письма. Оценка по 4 критериям Cambridge: Task, Coherence, Lexical Resource, Grammar.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">06 / VOCABULARY</div>
+      <h3>Лексика</h3>
+      <p>Оксфордские словари и интервальное повторение (SM-2). Слова запоминаются навсегда, а не на день.</p>
+    </div>
+  </div>
+</section>
+
+<section class="method" id="method">
+  <h2>Методика</h2>
+  <div class="method-list">
+    <div class="method-item"><b>CEFR Standard</b><p>Официальная европейская шкала A1–C2. Диагностика по 5 навыкам, адаптивная сложность под ваш профиль.</p></div>
+    <div class="method-item"><b>Cambridge Base</b><p>Все материалы — из утверждённых учебников Cambridge University Press и Oxford University Press.</p></div>
+    <div class="method-item"><b>AI-репетитор</b><p>Персональный наставник, доступный 24/7. Проверяет письмо, оценивает речь, объясняет правила, отвечает на вопросы.</p></div>
+    <div class="method-item"><b>Spaced Repetition</b><p>Алгоритм SM-2, на котором построен Anki. Слова возвращаются ровно тогда, когда мозг готов их укрепить.</p></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>ioma<span>english</span> · 2026</div>
+  <div class="footer-note">Cambridge · Oxford · BBC Learning English. Создано для людей, которые ценят своё время.</div>
+</footer>
+
+<button class="assist-fab" id="assistFab" aria-label="AI Tutor">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.1 6.3L20 10l-5.9 1.7L12 18l-2.1-6.3L4 10l5.9-1.7z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+  <span>AI-репетитор</span>
+</button>
+
+<div class="assist-overlay" id="assistOverlay" hidden>
+  <div class="assist-window">
+    <div class="assist-head">
+      <div class="orb"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.1 6.3L20 10l-5.9 1.7L12 18l-2.1-6.3L4 10l5.9-1.7z"/></svg></div>
+      <div style="flex:1"><h2>Your AI Tutor</h2><div class="sub">Спросите что угодно — отвечу мгновенно</div></div>
+      <button class="assist-close" id="assistClose">&times;</button>
+    </div>
+    <div class="assist-body" id="assistBody"></div>
+    <div class="assist-foot">
+      <textarea id="assistInput" rows="1" placeholder="Например: объясни разницу между Past Simple и Present Perfect"></textarea>
+      <button class="assist-send" id="assistSend" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="/particles.js?v=3" defer></script>
+<script src="/app.js?v=3" defer></script>
+<script src="/tts.js?v=2" defer></script>
+<script src="/interactions.js?v=3" defer></script>
+<script src="/robot.js?v=10" defer></script>
+</body>
+</html>

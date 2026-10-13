@@ -1,0 +1,49 @@
+/* speaking.css */
+.spk-shell{max-width:720px;margin:0 auto;padding:56px 40px 130px;position:relative;z-index:2}
+.spk-head{margin-bottom:36px}
+.spk-head h1{font-size:clamp(38px,5.4vw,60px);margin:0 0 14px}
+.spk-head p{color:var(--text-muted);font-size:15.5px;line-height:1.7;max-width:520px}
+
+.spk-prompt{padding:28px 30px;margin-bottom:40px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:24px;line-height:1.5}
+.spk-prompt b{font-family:var(--sans);font-style:normal;font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--gold);margin-right:6px}
+
+.spk-recorder{text-align:center;margin-bottom:40px}
+.spk-btn{
+  display:inline-flex;align-items:center;gap:12px;padding:20px 44px;background:var(--accent);color:var(--on-accent);
+  border:none;border-radius:var(--r-pill);font-size:16px;font-weight:600;cursor:pointer;
+  transition:background var(--t) var(--ease),transform var(--t) var(--ease),box-shadow var(--t) var(--ease);
+}
+.spk-btn:hover{background:var(--accent-2);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.spk-btn.recording{background:var(--err-solid);color:#fff;animation:ringErr 1.6s ease-out infinite}
+.spk-timer{margin-top:22px;font-size:40px;font-weight:300;letter-spacing:.04em;font-variant-numeric:tabular-nums;color:var(--text)}
+
+.spk-transcript{padding:26px 28px;margin-bottom:24px;box-shadow:none}
+.st-label{font-family:var(--serif);font-style:italic;font-weight:500;font-size:17px;color:var(--gold);margin-bottom:12px}
+.st-text{font-size:15.5px;line-height:1.8;font-style:italic;min-height:56px;margin-bottom:22px}
+
+/* feedback */
+.spk-feedback{padding:40px 36px;animation:rise 400ms var(--ease)}
+.fb-overall{display:flex;justify-content:space-between;align-items:center;padding-bottom:24px;margin-bottom:26px;border-bottom:1px solid var(--border)}
+.fb-overall-label{font-size:13px;font-weight:500;color:var(--text-muted)}
+.fb-overall-value{font-family:var(--serif);font-size:72px;font-weight:300;line-height:.9;color:var(--text);font-feature-settings:"lnum" 1}
+.fb-criteria{display:grid;gap:18px;margin-bottom:30px}
+.fb-crit{display:grid;grid-template-columns:120px 1fr 44px;gap:16px;align-items:center;font-size:13px}
+.fb-crit-name{color:var(--text-muted);font-weight:500}
+.fb-crit-bar{height:2px}
+.fb-crit-score{text-align:right;font-family:var(--serif);font-size:19px;font-weight:600;color:var(--text)}
+.fb-section{margin-bottom:24px}
+.fb-section h4{font-family:var(--serif);font-size:24px;font-weight:500;margin:0 0 12px}
+.fb-section ul{padding-left:20px;font-size:14.5px;line-height:1.8;color:var(--text-muted)}
+.fb-section li{margin-bottom:6px}
+.fb-section li::marker{color:var(--gold)}
+.fb-better{padding:20px 24px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:20px;line-height:1.65;color:var(--text)}
+
+#newTopicBtn{margin-top:28px}
+
+@media(max-width:640px){
+  .spk-shell{padding:32px 20px 90px}
+  .spk-prompt{font-size:21px;padding:22px}
+  .spk-feedback{padding:28px 22px}
+  .fb-crit{grid-template-columns:88px 1fr 40px;font-size:12px}
+  .fb-overall-value{font-size:56px}
+}

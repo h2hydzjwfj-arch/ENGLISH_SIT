@@ -1,0 +1,56 @@
+/* lesson.css */
+.lesson-shell{max-width:760px;margin:0 auto;padding:56px 40px 170px;position:relative;z-index:2}
+.lesson-header{margin-bottom:36px}
+.lesson-header h1{font-size:clamp(34px,5vw,54px);line-height:1.08;margin:0 0 18px}
+.lh-book{display:inline-block;font-size:12.5px;font-weight:500;color:var(--text-muted);padding:7px 14px;border-radius:var(--r-sm)}
+.lh-book:empty{display:none}
+
+/* theory */
+.lesson-rule{padding:34px 36px;margin-bottom:24px}
+.lesson-rule h2{font-family:var(--serif);font-style:italic;font-weight:500;font-size:22px;color:var(--gold);margin:0 0 14px}
+.lesson-rule p{font-size:17px;line-height:1.85;color:var(--text)}
+
+/* practice */
+.lesson-exercises{padding:38px 36px}
+.lesson-exercises h2{font-size:34px;margin:0 0 22px}
+.progress-line{display:flex;align-items:center;gap:16px;margin-bottom:30px}
+.pl-bar{flex:1;height:2px}
+.pl-fill{width:0%;transition:width 400ms var(--ease)}
+.progress-line span{font-size:12.5px;font-weight:600;color:var(--text-muted);min-width:52px;text-align:right;font-variant-numeric:tabular-nums}
+
+.exercise{margin-bottom:32px;padding-bottom:30px;border-bottom:1px solid var(--border)}
+.exercise:last-child{border-bottom:none;padding-bottom:0;margin-bottom:0}
+.ex-q{font-size:17.5px;font-weight:500;line-height:1.6;margin-bottom:18px}
+.ex-options{display:grid;gap:10px}
+.ex-comment{display:none;margin-top:14px;padding:14px 18px;font-size:14px;line-height:1.65;color:var(--text-muted)}
+.ex-comment.show{display:block;animation:rise 280ms var(--ease)}
+
+/* bottom nav */
+.lesson-nav{
+  position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;padding:16px 40px;
+  background:var(--topbar-bg);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top:1px solid var(--border);
+}
+.lesson-nav button{padding:13px 28px;font-size:14px}
+
+/* completion modal */
+.lesson-result{
+  position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;padding:24px;
+  background:var(--overlay);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  animation:fadeIn var(--t) var(--ease);
+}
+.lr-card{padding:52px 48px;text-align:center;max-width:440px;box-shadow:var(--shadow-lg);animation:rise 380ms var(--ease)}
+.lr-icon{
+  width:56px;height:56px;margin:0 auto 24px;display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--accent);border-radius:50%;color:var(--accent-2);font-size:24px;font-weight:500;
+}
+.lr-card h2{font-size:36px;margin:0 0 12px}
+.lr-score{font-size:15.5px;color:var(--text-muted);margin:0 0 32px}
+.lr-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+@media(max-width:640px){
+  .lesson-shell{padding:32px 20px 160px}
+  .lesson-rule,.lesson-exercises{padding:26px 22px}
+  .lesson-nav{padding:12px 20px}
+  .lesson-nav button{padding:12px 20px;font-size:13.5px}
+  .lr-card{padding:40px 28px}
+}

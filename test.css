@@ -1,0 +1,117 @@
+/* test.css — diagnostic. Layout and page-specific type only; surfaces, options, buttons come from styles.css */
+.test-shell{max-width:800px;margin:0 auto;padding:64px 40px 170px;position:relative;z-index:2}
+.test-progress-mini{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.test-progress-mini span{font-size:12.5px;font-weight:500;color:var(--text-muted)}
+.mini-bar{width:160px;height:2px}
+.mini-fill{width:0%}
+
+.test-stage{animation:rise 400ms var(--ease)}
+
+/* welcome */
+.stage-card{padding:72px 56px;text-align:center}
+.stage-card h1{font-size:clamp(36px,5vw,56px);line-height:1.05;margin:0 0 20px}
+.stage-lede{font-size:16.5px;line-height:1.75;color:var(--text-muted);max-width:540px;margin:0 auto 48px}
+.stage-lede b{color:var(--text);font-weight:600}
+.rules-list{display:grid;gap:12px;text-align:left;max-width:580px;margin:0 auto 48px}
+.rule{display:flex;gap:20px;align-items:flex-start;padding:20px 24px}
+.rule span{
+  flex-shrink:0;min-width:30px;font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:24px;line-height:1.1;color:var(--gold);
+}
+.rule div{font-size:14.5px;line-height:1.65;color:var(--text-muted)}
+.rule b{color:var(--text);font-weight:600}
+.stage-btn{margin:0 auto;padding:17px 40px;font-size:15px}
+.stage-note{margin-top:28px;font-size:12.5px;color:var(--text-dim);letter-spacing:.06em}
+
+/* section heads */
+.stage-head{margin-bottom:36px}
+.stage-head h2{font-size:clamp(36px,5vw,52px);margin:0 0 12px}
+.stage-head p{color:var(--text-muted);font-size:15.5px;line-height:1.7;max-width:560px}
+
+/* grammar question */
+.question-card{padding:44px 40px}
+.q-meta{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--text-muted);font-weight:500;margin-bottom:26px}
+.q-meta .q-level{font-family:var(--serif);font-style:italic;font-size:19px;font-weight:500;color:var(--gold)}
+.q-text{font-size:19px;font-weight:500;line-height:1.55;margin-bottom:30px}
+.q-sentence{font-family:var(--serif);font-style:italic;font-weight:500;font-size:27px;line-height:1.4;padding:26px 30px;margin-bottom:30px}
+.q-options{display:grid;gap:10px}
+
+/* reading */
+.reading-block,.listening-block,.writing-block,.speaking-block{padding:40px 36px}
+.reading-text{
+  font-family:var(--serif);font-size:21px;font-weight:500;line-height:1.7;
+  padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid var(--border);
+}
+.reading-text p{margin:0 0 16px}
+.reading-questions{display:grid;gap:30px}
+.rq{padding-bottom:30px;border-bottom:1px solid var(--border)}
+.rq:last-child{border-bottom:none;padding-bottom:0}
+.rq-label{font-family:var(--serif);font-style:italic;font-weight:500;font-size:17px;color:var(--gold);margin-bottom:10px}
+.rq-question{font-size:16.5px;font-weight:500;line-height:1.55;margin-bottom:18px}
+.rq-options{display:grid;gap:10px}
+.rq-options .q-option{padding:13px 18px;font-size:14.5px}
+
+/* listening */
+.listening-block{text-align:center}
+.play-btn,.record-btn{
+  display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:var(--on-accent);
+  border:none;border-radius:var(--r-pill);font-weight:600;cursor:pointer;
+  transition:background var(--t) var(--ease),transform var(--t) var(--ease),box-shadow var(--t) var(--ease),opacity var(--t) var(--ease);
+}
+.play-btn{padding:18px 38px;font-size:15px}
+.record-btn{padding:20px 42px;font-size:16px}
+.play-btn:hover,.record-btn:hover{background:var(--accent-2);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.play-btn.playing{animation:ring 1.8s ease-out infinite}
+.play-btn:disabled{opacity:.4;cursor:default;transform:none;box-shadow:none}
+.audio-status{margin-top:18px;font-size:13px;color:var(--text-muted);font-weight:500}
+.listening-question{margin-top:44px;text-align:left}
+
+/* writing */
+.task-prompt{padding:22px 26px;margin-bottom:24px;font-size:15.5px;line-height:1.75}
+.task-prompt b{color:var(--gold);font-weight:600}
+#writingInput{width:100%;min-height:260px;padding:22px 24px;font-size:15.5px;resize:vertical}
+.writing-info{display:flex;justify-content:space-between;font-size:12.5px;color:var(--text-dim);margin-top:12px}
+
+/* speaking */
+.speaking-block{text-align:center}
+.speaking-block .task-prompt{text-align:left}
+.record-btn.recording{background:var(--err-solid);color:#fff;animation:ringErr 1.6s ease-out infinite}
+.record-timer{margin-top:22px;font-family:var(--sans);font-size:38px;font-weight:300;letter-spacing:.04em;font-variant-numeric:tabular-nums;color:var(--text)}
+.transcript-box{margin-top:30px;padding:24px 26px;text-align:left;box-shadow:none}
+.transcript-label{font-family:var(--serif);font-style:italic;font-weight:500;font-size:17px;color:var(--gold);margin-bottom:10px}
+.transcript-text{font-size:15px;line-height:1.75;font-style:italic}
+
+/* result */
+.result-card{padding:72px 56px;text-align:center}
+.result-eyebrow{margin-bottom:20px}
+.result-level{
+  font-family:var(--serif);font-size:clamp(100px,18vw,168px);font-weight:300;line-height:.9;
+  letter-spacing:-.02em;color:var(--text);margin-bottom:20px;font-feature-settings:"lnum" 1;
+  animation:resultIn 800ms var(--ease) both;
+}
+@keyframes resultIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.result-name{font-family:var(--serif);font-style:italic;font-size:26px;font-weight:400;color:var(--text-muted);margin-bottom:44px}
+.result-profile{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:44px}
+.rp-item{padding:22px 14px;box-shadow:none}
+.rp-item .rp-label{font-size:12.5px;font-weight:500;color:var(--text-muted);margin-bottom:8px}
+.rp-item .rp-level{font-family:var(--serif);font-size:34px;font-weight:500;line-height:1;color:var(--text)}
+.result-summary{font-size:15.5px;line-height:1.8;color:var(--text-muted);max-width:600px;margin:0 auto 44px}
+.result-summary b{color:var(--text);font-weight:600}
+.result-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* bottom nav */
+.test-nav{
+  position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;padding:16px 40px;
+  background:var(--topbar-bg);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top:1px solid var(--border);
+}
+.test-nav .btn-primary,.test-nav .btn-ghost{padding:13px 28px;font-size:14px}
+
+@media(max-width:640px){
+  .test-shell{padding:32px 20px 160px}
+  .stage-card,.result-card{padding:44px 26px}
+  .q-sentence{font-size:22px;padding:20px 22px}
+  .question-card,.reading-block,.listening-block,.writing-block,.speaking-block{padding:28px 22px}
+  .reading-text{font-size:19px}
+  .test-nav{padding:12px 20px}
+  .test-nav .btn-primary,.test-nav .btn-ghost{padding:12px 20px;font-size:13.5px}
+}

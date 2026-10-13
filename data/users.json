@@ -1,0 +1,81 @@
+[
+  {
+    "id": "u_muqrahnv_671485",
+    "email": "test@test.ru",
+    "name": "Test",
+    "passHash": "scrypt$16384$8$1$2e828b7a546d5b3f0a49e7fea18a6f02$76d4e57cea5716cf13ce46b57cfa90bba30a4f14ffba8e1da34a48d0b0753495",
+    "createdAt": 1790933039887,
+    "progress": null
+  },
+  {
+    "id": "u_muqrizvt_010c9f",
+    "email": "iomadj56@mail.ru",
+    "name": "Роман",
+    "passHash": "scrypt$16384$8$1$6468c4762711a494b039ce8cf76228b5$89b3b61b039b4e2c0358d4b1d0b6189f071f84147b315c75ab76a4a48214c1d8",
+    "createdAt": 1790933436772,
+    "progress": {
+      "id": "u_muqrizvt_010c9f",
+      "createdAt": 1790930605183,
+      "level": "A2",
+      "testScores": {
+        "grammar": 40,
+        "reading": 33,
+        "listening": 0,
+        "writing": 29,
+        "speaking": 47
+      },
+      "testPercent": 30,
+      "progressToNext": 25,
+      "streak": 1,
+      "lastVisit": 1791916606248,
+      "lastStreakDay": "2026-10-13",
+      "lessonsDone": 1,
+      "unitProgress": {
+        "ling-01": {
+          "tries": 1,
+          "correct": 2,
+          "total": 4,
+          "best": 50,
+          "lastAt": 1790934488677
+        }
+      },
+      "vocabulary": [],
+      "achievements": [],
+      "history": [],
+      "lessonHistory": [],
+      "testTakenAt": 1790932533757,
+      "userId": "u_muqrizvt_010c9f",
+      "name": "Роман",
+      "email": "iomadj56@mail.ru"
+    },
+    "updatedAt": 1791916606248
+  },
+  {
+    "id": "u_muqs7i2b_699049",
+    "email": "autotest_1790934580@test.ru",
+    "name": "Auto Test",
+    "passHash": "scrypt$16384$8$1$94cbaea26ef88752a076393fae139240$6cdf842b9b090e6b3d9449d1dde01f379b0880091d5e9afc9172cf0924be8ea4",
+    "createdAt": 1790934580047,
+    "progress": {
+      "id": "u_muqs7i2b_699049",
+      "userId": "u_muqs7i2b_699049",
+      "createdAt": 1790934580047,
+      "name": "Auto Test",
+      "email": "autotest_1790934580@test.ru",
+      "level": null,
+      "testScores": null,
+      "testPercent": 0,
+      "progressToNext": 0,
+      "streak": 0,
+      "lastVisit": null,
+      "lastStreakDay": null,
+      "lessonsDone": 0,
+      "unitProgress": {},
+      "vocabulary": [],
+      "achievements": [],
+      "history": [],
+      "lessonHistory": []
+    },
+    "updatedAt": 1790934580049
+  }
+]

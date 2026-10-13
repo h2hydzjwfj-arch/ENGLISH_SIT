@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagnostic Test — iomaenglish</title>
+<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/test.css?v=3">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left"><a href="/" class="back-link">← Главная</a></div>
+  <div class="brand">ioma<span>english</span></div>
+  <div class="topbar-right">
+    <div class="test-progress-mini">
+      <span id="sectionLabel">Начало</span>
+      <div class="mini-bar"><div class="mini-fill" id="miniFill" style="width:0%"></div></div>
+    </div>
+  </div>
+</header>
+
+<main class="test-shell">
+  <section class="test-stage" id="stage-welcome">
+    <div class="stage-card">
+      <div class="stage-eyebrow">DIAGNOSTIC</div>
+      <h1>Узнаем ваш уровень английского</h1>
+      <p class="stage-lede">Тест занимает <b>15–20 минут</b>. Проверим 5 навыков: грамматику, чтение, аудирование, письмо и говорение.</p>
+      <div class="rules-list">
+        <div class="rule"><span>I</span><div><b>Отвечайте честно.</b> Не используйте переводчик — тест должен показать реальный уровень.</div></div>
+        <div class="rule"><span>II</span><div><b>Не переживайте об ошибках.</b> Это диагностика, а не экзамен.</div></div>
+        <div class="rule"><span>III</span><div><b>Для говорения нужен микрофон.</b> Разрешите доступ, когда браузер спросит.</div></div>
+      </div>
+      <button class="btn-primary stage-btn" id="startTest">
+        Начать тест
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="stage-note">Шкала CEFR: A1 · A2 · B1 · B2 · C1 · C2</div>
+    </div>
+  </section>
+
+  <section class="test-stage" id="stage-grammar" hidden>
+    <div class="stage-head">
+      <span class="stage-eyebrow">Section I / V</span>
+      <h2>Grammar</h2>
+      <p>Выберите правильный вариант.</p>
+    </div>
+    <div class="question-card" id="grammarCard"></div>
+  </section>
+
+  <section class="test-stage" id="stage-reading" hidden>
+    <div class="stage-head">
+      <span class="stage-eyebrow">Section II / V</span>
+      <h2>Reading</h2>
+      <p>Прочитайте текст и ответьте на вопросы.</p>
+    </div>
+    <div class="reading-block">
+      <div class="reading-text" id="readingText"></div>
+      <div class="reading-questions" id="readingQuestions"></div>
+    </div>
+  </section>
+
+  <section class="test-stage" id="stage-listening" hidden>
+    <div class="stage-head">
+      <span class="stage-eyebrow">Section III / V</span>
+      <h2>Listening</h2>
+      <p>Прослушайте аудио и ответьте на вопрос. Кнопка воспроизведения — один раз.</p>
+    </div>
+    <div class="listening-block">
+      <button class="play-btn" id="playBtn">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        <span>Воспроизвести</span>
+      </button>
+      <div class="audio-status" id="audioStatus">Нажмите, чтобы прослушать</div>
+      <div class="listening-question" id="listeningQuestion"></div>
+    </div>
+  </section>
+
+  <section class="test-stage" id="stage-writing" hidden>
+    <div class="stage-head">
+      <span class="stage-eyebrow">Section IV / V</span>
+      <h2>Writing</h2>
+      <p>Напишите небольшой текст — AI оценит по критериям Cambridge.</p>
+    </div>
+    <div class="writing-block">
+      <div class="task-prompt" id="writingPrompt"></div>
+      <textarea id="writingInput" placeholder="Начните писать здесь..." maxlength="2000" rows="10"></textarea>
+      <div class="writing-info"><span id="writingCount">0 символов</span><span>Минимум 80 символов</span></div>
+    </div>
+  </section>
+
+  <section class="test-stage" id="stage-speaking" hidden>
+    <div class="stage-head">
+      <span class="stage-eyebrow">Section V / V</span>
+      <h2>Speaking</h2>
+      <p>Нажмите «Говорить» и расскажите 30–60 секунд на заданную тему.</p>
+    </div>
+    <div class="speaking-block">
+      <div class="task-prompt" id="speakingPrompt"></div>
+      <button class="record-btn" id="recordBtn">
+        <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="6" fill="currentColor"/></svg>
+        <span id="recordLabel">Говорить</span>
+      </button>
+      <div class="record-timer" id="recordTimer">00:00</div>
+      <div class="transcript-box" id="transcriptBox" hidden>
+        <div class="transcript-label">Транскрипт:</div>
+        <div class="transcript-text" id="transcriptText"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="test-stage" id="stage-result" hidden>
+    <div class="result-card">
+      <div class="result-eyebrow">Ваш уровень</div>
+      <div class="result-level" id="resultLevel">—</div>
+      <div class="result-name" id="resultName"></div>
+      <div class="result-profile" id="resultProfile"></div>
+      <div class="result-summary" id="resultSummary"></div>
+      <div class="result-actions">
+        <a href="/dashboard" class="btn-primary">Перейти к обучению</a>
+        <button class="btn-ghost" id="restartBtn">Пройти снова</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="test-nav" id="testNav" hidden>
+    <button class="btn-ghost" id="backBtn" disabled>← Назад</button>
+    <button class="btn-primary" id="nextBtn" disabled>Далее →</button>
+  </div>
+</main>
+
+<script src="/test.js?v=3" defer></script>
+<script src="/tts.js?v=2" defer></script>
+<script src="/interactions.js?v=3" defer></script>
+<script src="/robot.js?v=10" defer></script>
+</body>
+</html>

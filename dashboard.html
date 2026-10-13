@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — iomaenglish</title>
+<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/dashboard.css?v=3">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left"><a href="/" class="back-link">← Главная</a></div>
+  <div class="brand">ioma<span>english</span></div>
+  <div class="topbar-right">
+    <div class="streak-badge" id="streakBadge"><span>🔥</span><b id="streakNum">0</b></div>
+    <button id="themeToggle" class="theme-btn" aria-label="Theme"><svg viewBox="0 0 24 24"><g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g><path class="icon-moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  </div>
+</header>
+
+<main class="dash-shell">
+  <section class="level-hero">
+    <div class="lh-left">
+      <div class="lh-eyebrow">Current Level</div>
+      <div class="lh-level" id="lhLevel">—</div>
+      <div class="lh-name" id="lhName"></div>
+    </div>
+    <div class="lh-right">
+      <div class="lhp-label"><span>Progress to next level</span><b id="lhpPercent">0%</b></div>
+      <div class="lhp-bar"><div class="lhp-fill" id="lhpFill" style="width:0%"></div></div>
+      <div class="lhp-hint" id="lhpHint">Пройдите тест, чтобы определить уровень</div>
+      <a class="lh-cta" href="/test" id="lhTestBtn">Пройти тест</a>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Сегодня хочу...</h2>
+    <div class="mode-grid">
+      <a class="mode-card" href="/listening">
+        <div class="mode-emoji">🎧</div>
+        <div class="mode-title">Только слушать</div>
+        <div class="mode-desc">Подкасты, аудио, тренировка понимания на слух</div>
+        <div class="mode-arrow">Открыть →</div>
+      </a>
+      <a class="mode-card" href="/speaking">
+        <div class="mode-emoji">🎤</div>
+        <div class="mode-title">Только говорить</div>
+        <div class="mode-desc">Практика речи с AI, произношение, беглость</div>
+        <div class="mode-arrow">Открыть →</div>
+      </a>
+      <a class="mode-card" href="/writing">
+        <div class="mode-emoji">✍️</div>
+        <div class="mode-title">Только писать</div>
+        <div class="mode-desc">Эссе, письма, разбор по критериям Cambridge</div>
+        <div class="mode-arrow">Открыть →</div>
+      </a>
+      <a class="mode-card" href="/dashboard" data-goto-lesson>
+        <div class="mode-emoji">📖</div>
+        <div class="mode-title">Только грамматика</div>
+        <div class="mode-desc">Уроки Murphy с упражнениями и озвучкой</div>
+        <div class="mode-arrow">Открыть →</div>
+      </a>
+      <a class="mode-card" href="/vocabulary">
+        <div class="mode-emoji">💡</div>
+        <div class="mode-title">Только слова</div>
+        <div class="mode-desc">Карточки, интервальное повторение, словарь</div>
+        <div class="mode-arrow">Открыть →</div>
+      </a>
+      <a class="mode-card" href="/test">
+        <div class="mode-emoji">🎯</div>
+        <div class="mode-title">Проверить уровень</div>
+        <div class="mode-desc">Диагностический тест по 5 навыкам</div>
+        <div class="mode-arrow">Открыть →</div>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="stat-row">
+    <div class="stat-card"><div class="sc-value" id="statLessons">0</div><div class="sc-label">Lessons completed</div></div>
+    <div class="stat-card"><div class="sc-value" id="statWords">0</div><div class="sc-label">Words learned</div></div>
+    <div class="stat-card"><div class="sc-value" id="statStreak">0</div><div class="sc-label">Day streak</div></div>
+    <div class="stat-card"><div class="sc-value" id="statScore">0%</div><div class="sc-label">Test score</div></div>
+  </section>
+
+  <section class="skill-row">
+    <h2>Навыки</h2>
+    <div class="skills" id="skillsGrid"></div>
+  </section>
+
+  <section class="curriculum-block" id="curriculum">
+    <div class="cb-head">
+      <h2>Программа обучения</h2>
+      <div class="cb-book" id="cbBook"></div>
+    </div>
+    <div class="units-grid" id="unitsGrid"></div>
+  </section>
+
+  <section class="quick-links">
+    <a class="quick-card" href="/vocabulary"><div class="qc-num">01</div><div><b>Vocabulary</b><span>Слова и интервальное повторение</span></div></a>
+    <a class="quick-card" href="/speaking"><div class="qc-num">02</div><div><b>Speaking</b><span>Практика разговорной речи</span></div></a>
+    <a class="quick-card" href="/listening"><div class="qc-num">03</div><div><b>Listening</b><span>Аудио и понимание на слух</span></div></a>
+    <a class="quick-card" href="/writing"><div class="qc-num">04</div><div><b>Writing</b><span>Эссе с AI-проверкой</span></div></a>
+  </section>
+</main>
+
+<script src="/dashboard.js?v=12" defer></script>
+<script src="/tts.js?v=2" defer></script>
+<script src="/interactions.js?v=3" defer></script>
+<script src="/robot.js?v=10" defer></script>
+</body>
+</html>

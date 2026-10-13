@@ -1,0 +1,61 @@
+/* vocabulary.css */
+.voc-shell{max-width:760px;margin:0 auto;padding:56px 40px 130px;position:relative;z-index:2}
+.voc-head{margin-bottom:40px}
+.voc-head h1{font-size:clamp(38px,5.4vw,60px);margin:0 0 14px}
+.voc-head p{color:var(--text-muted);font-size:15.5px;line-height:1.7;max-width:520px}
+
+.voc-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:56px;
+}
+.vs-card{background:var(--bg-2);padding:32px 28px}
+.vs-value{font-family:var(--serif);font-size:58px;font-weight:300;line-height:1;color:var(--text);margin-bottom:10px;font-feature-settings:"lnum" 1}
+.vs-label{font-size:13px;color:var(--text-muted);font-weight:500}
+
+.voc-add,.voc-review,.voc-list{margin-bottom:56px}
+.voc-add h2,.voc-review h2,.voc-list h2{font-size:32px;margin:0 0 20px}
+
+.va-row{display:grid;grid-template-columns:1fr 1fr auto;gap:10px}
+.va-row input{padding:14px 18px}
+.va-row button{padding:14px 26px}
+
+/* review card */
+.card-review{padding:64px 36px;text-align:center}
+.cr-word{font-family:var(--serif);font-size:clamp(46px,8vw,72px);font-weight:400;line-height:1.05;letter-spacing:-.01em;margin-bottom:18px}
+.cr-trans{font-family:var(--serif);font-style:italic;font-size:28px;font-weight:400;color:var(--accent-2);margin-bottom:34px;min-height:36px;transition:opacity var(--t) var(--ease)}
+.cr-trans.hidden-trans{visibility:hidden}
+.cr-show{
+  background:transparent;border:1px solid var(--border-2);color:var(--text-muted);padding:12px 24px;border-radius:var(--r);
+  font-size:14px;font-weight:500;cursor:pointer;margin-bottom:28px;
+  transition:border-color var(--t) var(--ease),color var(--t) var(--ease);
+}
+.cr-show:hover{border-color:var(--accent);color:var(--text)}
+.cr-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.cr-btn{
+  min-width:120px;padding:13px 24px;background:transparent;color:var(--text);
+  border:1px solid var(--border-2);border-radius:var(--r);font-size:14px;font-weight:500;cursor:pointer;
+  transition:border-color var(--t) var(--ease),background var(--t) var(--ease),transform var(--t) var(--ease);
+}
+.cr-btn:hover{transform:translateY(-1px)}
+.cr-btn.good{border-color:var(--ok);color:var(--ok)}
+.cr-btn.good:hover{background:var(--ok-soft)}
+.cr-btn.bad{border-color:var(--err);color:var(--err)}
+.cr-btn.bad:hover{background:var(--err-soft)}
+.cr-btn.hard{border-color:var(--gold);color:var(--gold)}
+.cr-btn.hard:hover{background:var(--bg-2)}
+
+/* word list */
+.voc-item{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 22px;margin-bottom:8px;font-size:15px;box-shadow:none}
+.vi-word{font-weight:600}
+.vi-trans{color:var(--text-muted);margin-left:12px;font-family:var(--serif);font-style:italic;font-size:18px}
+.vi-due{
+  flex-shrink:0;font-size:12px;font-weight:500;color:var(--text-muted);background:var(--bg-2);
+  border:1px solid var(--border);padding:4px 11px;border-radius:var(--r-sm);
+}
+.vi-due.ready{background:var(--ok-soft);color:var(--ok);border-color:var(--ok)}
+
+@media(max-width:640px){
+  .voc-shell{padding:32px 20px 90px}
+  .va-row{grid-template-columns:1fr}
+  .card-review{padding:44px 22px}
+}

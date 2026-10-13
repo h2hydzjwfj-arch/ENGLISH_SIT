@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мой профиль — iomaenglish</title>
+<link rel="stylesheet" href="/styles.css">
+</head><body>
+<header class="topbar">
+<div class="topbar-left"><a href="/dashboard" class="back-link">← Dashboard</a></div>
+<div class="brand"><b>ioma</b><span>english</span></div>
+<div class="topbar-right">
+<button id="themeToggle" class="theme-btn"><svg viewBox="0 0 24 24"><g class="icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g><path class="icon-moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</div>
+</header>
+<main class="profile-shell">
+<div id="loading" class="placeholder">Загрузка профиля...</div>
+<div id="content" hidden>
+<section class="profile-hero card">
+<div class="avatar" id="avatar">A</div>
+<div class="profile-info">
+<h1 id="userName">—</h1>
+<div class="email" id="userEmail">—</div>
+<div class="since" id="userSince"></div>
+<div class="profile-actions">
+<a href="/dashboard" class="btn-primary">Продолжить обучение</a>
+<a href="/test" class="btn-ghost">Пройти тест заново</a>
+<button class="btn-ghost" id="logoutBtn">Выйти</button>
+</div>
+</div>
+</section>
+<div class="stat-grid">
+<div class="stat-card"><div class="sc-value accent" id="statLevel">—</div><div class="sc-label">Уровень CEFR</div></div>
+<div class="stat-card"><div class="sc-value" id="statLessons">0</div><div class="sc-label">Уроков</div></div>
+<div class="stat-card"><div class="sc-value" id="statWords">0</div><div class="sc-label">Слов в словаре</div></div>
+<div class="stat-card"><div class="sc-value" id="statStreak">0</div><div class="sc-label">Дней подряд</div></div>
+</div>
+<section class="section"><h2>Навыки</h2><div class="skill-grid" id="skillsGrid"></div></section>
+<section class="section"><h2>История занятий</h2><div id="historyWrap"></div></section>
+<section class="section"><h2>Настройки</h2>
+<div class="card" style="padding:24px">
+<h3 style="margin:0 0 16px;font-size:15px">Сменить пароль</h3>
+<form id="pwForm" style="display:grid;gap:12px;max-width:420px">
+<input type="password" id="pwCurrent" placeholder="Текущий пароль" required>
+<input type="password" id="pwNew" placeholder="Новый пароль (мин. 6)" required minlength="6">
+<button type="submit" class="btn-primary" id="pwSubmit" style="justify-self:start">Сохранить</button>
+<div id="pwMsg" style="font-size:13.5px"></div>
+</form>
+</div>
+</section>
+</div>
+</main>
+<script>
+(function(){
+var t=document.getElementById('themeToggle');
+try{var s=localStorage.getItem('iomaeng_theme');if(s==='light')document.documentElement.classList.add('light');else if(s==='dark')document.documentElement.classList.remove('light');else if(matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.classList.add('light');}catch(e){}
+if(t)t.addEventListener('click',function(){var isLight=document.documentElement.classList.toggle('light');try{localStorage.setItem('iomaeng_theme',isLight?'light':'dark');}catch(e){}});
+function initials(name,email){var n=(name||email||'A').trim();return n.split(/\s+/).slice(0,2).map(function(p){return p.charAt(0).toUpperCase();}).join('');}
+function scoreToLevel(p){if(p<25)return 'A1';if(p<45)return 'A2';if(p<65)return 'B1';if(p<80)return 'B2';if(p<92)return 'C1';return 'C2';}
+fetch('/api/profile',{credentials:'same-origin'})
+.then(function(r){return r.json();})
+.then(function(d){
+if(!d||!d.ok||!d.user)return location.href='/login';
+document.getElementById('loading').hidden=true;
+document.getElementById('content').hidden=false;
+var u=d.user,p=d.profile||{};
+document.getElementById('userName').textContent=u.name||u.email.split('@')[0];
+document.getElementById('userEmail').textContent=u.email;
+document.getElementById('avatar').textContent=initials(u.name,u.email);
+try{document.getElementById('userSince').textContent='Аккаунт создан: '+new Date(u.createdAt).toLocaleDateString('ru-RU');}catch(e){}
+document.getElementById('statLevel').textContent=p.level||'—';
+document.getElementById('statLessons').textContent=p.lessonsDone||0;
+document.getElementById('statWords').textContent=(p.vocabulary||[]).length;
+document.getElementById('statStreak').textContent=p.streak||0;
+var sg=document.getElementById('skillsGrid');
+if(p.testScores){
+var labels={grammar:'Grammar',reading:'Reading',listening:'Listening',writing:'Writing',speaking:'Speaking'};
+sg.innerHTML=Object.keys(labels).map(function(k){var v=p.testScores[k]||0;return '<div class="skill-card card"><div class="sk-label">'+labels[k]+'</div><div class="sk-level">'+scoreToLevel(v)+'</div><div class="sk-bar bar"><div class="bar-fill" style="width:'+v+'%"></div></div></div>';}).join('');
+}else{sg.innerHTML='<div class="empty" style="grid-column:1/-1">Пройдите тест, чтобы увидеть навыки</div>';}
+var hist=(p.history||[]).slice(-10).reverse();
+var hw=document.getElementById('historyWrap');
+if(hist.length){
+hw.innerHTML='<div class="history-table"><table><thead><tr><th>Дата</th><th>Событие</th><th>Результат</th></tr></thead><tbody>'+hist.map(function(h){var when='';try{when=new Date(h.at).toLocaleDateString('ru-RU');}catch(e){}var type=h.type==='test'?'Тест':(h.type==='lesson'?'Урок '+(h.unitId||''):h.type);var score=h.percent!=null?h.percent+'%':(h.level||'');return '<tr><td>'+when+'</td><td>'+type+'</td><td class="score">'+score+'</td></tr>';}).join('')+'</tbody></table></div>';
+}else{hw.innerHTML='<div class="empty">Пока нет занятий. Начните с <a href="/test" style="color:var(--accent)">теста</a>.</div>';}
+}).catch(function(){location.href='/login';});
+document.getElementById('logoutBtn').addEventListener('click',function(){fetch('/api/auth/logout',{method:'POST',credentials:'same-origin'}).then(function(){location.href='/';});});
+document.getElementById('pwForm').addEventListener('submit',function(e){
+e.preventDefault();
+var c=document.getElementById('pwCurrent').value,n=document.getElementById('pwNew').value,msg=document.getElementById('pwMsg');
+msg.style.color='';
+if(n.length<6){msg.style.color='var(--err)';msg.textContent='Новый пароль мин. 6 символов';return;}
+var b=document.getElementById('pwSubmit');b.disabled=true;b.textContent='Сохраняю...';
+fetch('/api/profile/password',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({current:c,next:n})})
+.then(function(r){return r.json();})
+.then(function(d){b.disabled=false;b.textContent='Сохранить';if(d&&d.ok){msg.style.color='var(--ok)';msg.textContent='Пароль обновлён';document.getElementById('pwForm').reset();}else{msg.style.color='var(--err)';msg.textContent=(d&&d.error)||'Ошибка';}})
+.catch(function(){b.disabled=false;b.textContent='Сохранить';msg.style.color='var(--err)';msg.textContent='Ошибка соединения';});
+});
+})();
+</script>
+<script src="/tts.js?v=2" defer></script>
+<script src="/interactions.js?v=3" defer></script>
+<script src="/robot.js?v=10" defer></script>
+</body></html>

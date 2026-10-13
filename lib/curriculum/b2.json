@@ -1,0 +1,2741 @@
+{
+  "book": "English Grammar in Use · Raymond Murphy · Cambridge",
+  "units": [
+    {
+      "id": "ling-35",
+      "title": "Had better / It's time",
+      "level": "B2",
+      "grammar": "Had better — настоятельная рекомендация (иначе будет плохо). It's time + past simple — давно пора. You'd better hurry. It's time we left.",
+      "exercises": [
+        {
+          "q": "You ___ better hurry — the train leaves in 5 minutes.",
+          "options": [
+            "had",
+            "have",
+            "would",
+            "should"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "It's time we ___ home.",
+          "options": [
+            "go",
+            "went",
+            "will go",
+            "are going"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "You'd better not ___ late.",
+          "options": [
+            "be",
+            "to be",
+            "being",
+            "been"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "It's time you ___ your homework.",
+          "options": [
+            "do",
+            "did",
+            "will do",
+            "are doing"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-40",
+      "title": "Third Conditional",
+      "level": "B2",
+      "grammar": "Нереальные условия в прошлом. If + Past Perfect, would have + V3. Сожаление о несделанном.",
+      "exercises": [
+        {
+          "q": "If I ___ studied harder, I would have passed.",
+          "options": [
+            "have",
+            "had",
+            "would",
+            "did"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She would have come if you ___ her.",
+          "options": [
+            "invited",
+            "had invited",
+            "would invite",
+            "invite"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "If we had left earlier, we ___ missed the train.",
+          "options": [
+            "wouldn't have",
+            "won't have",
+            "didn't",
+            "don't"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "They ___ have won if they had played better.",
+          "options": [
+            "would",
+            "will",
+            "had",
+            "have"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-41",
+      "title": "Wish / Hope",
+      "level": "B2",
+      "grammar": "Wish + past — сожаление о настоящем. Wish + past perfect — сожаление о прошлом. Hope — реальная надежда.",
+      "exercises": [
+        {
+          "q": "I wish I ___ more time.",
+          "options": [
+            "have",
+            "had",
+            "will have",
+            "having"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I wish I ___ studied more for the exam.",
+          "options": [
+            "have",
+            "had",
+            "would",
+            "did"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I hope you ___ well soon.",
+          "options": [
+            "get",
+            "got",
+            "will get",
+            "getting"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "I wish it ___ raining.",
+          "options": [
+            "stopped",
+            "would stop",
+            "stops",
+            "stop"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-45",
+      "title": "It is said that / He is supposed to",
+      "level": "B2",
+      "grammar": "Конструкция для передачи общих утверждений: It is said that he is rich = He is said to be rich.",
+      "exercises": [
+        {
+          "q": "He ___ to be very rich.",
+          "options": [
+            "says",
+            "is said",
+            "said",
+            "is saying"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "It ___ that she left the country.",
+          "options": [
+            "believes",
+            "is believed",
+            "believed",
+            "believing"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She is supposed ___ a great singer.",
+          "options": [
+            "to be",
+            "be",
+            "being",
+            "been"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "They are known ___ in London.",
+          "options": [
+            "live",
+            "to live",
+            "living",
+            "lived"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-46",
+      "title": "Have something done",
+      "level": "B2",
+      "grammar": "Конструкция: have + object + V3. I had my hair cut. She had her car repaired.",
+      "exercises": [
+        {
+          "q": "I had my hair ___ yesterday.",
+          "options": [
+            "cut",
+            "cutting",
+            "to cut",
+            "cuts"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She had her car ___ last week.",
+          "options": [
+            "repair",
+            "repaired",
+            "to repair",
+            "repairing"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "We need to have the house ___ .",
+          "options": [
+            "paint",
+            "painted",
+            "painting",
+            "to paint"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He had his phone ___ .",
+          "options": [
+            "steal",
+            "stolen",
+            "stealing",
+            "to steal"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-48",
+      "title": "Reported Speech 2 (вопросы и приказы)",
+      "level": "B2",
+      "grammar": "Косвенные вопросы: He asked where I lived (без do). Приказы: She told me to wait.",
+      "exercises": [
+        {
+          "q": "He asked me where I ___ .",
+          "options": [
+            "live",
+            "lived",
+            "do live",
+            "am living"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She told me ___ wait.",
+          "options": [
+            "wait",
+            "to wait",
+            "waiting",
+            "waited"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "They asked if I ___ ready.",
+          "options": [
+            "am",
+            "was",
+            "be",
+            "been"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He told me ___ not touch it.",
+          "options": [
+            "do",
+            "to",
+            "not",
+            "don't"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-55",
+      "title": "Complex Object (want you to, expect him to)",
+      "level": "B2",
+      "grammar": "Конструкция: глагол + object + to + V. I want you to help me. She expects him to call.",
+      "exercises": [
+        {
+          "q": "I want you ___ me.",
+          "options": [
+            "help",
+            "helping",
+            "to help",
+            "helped"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She expects him ___ on time.",
+          "options": [
+            "be",
+            "being",
+            "to be",
+            "been"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "They asked me ___ quiet.",
+          "options": [
+            "keep",
+            "keeping",
+            "to keep",
+            "kept"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We'd like you ___ with us.",
+          "options": [
+            "come",
+            "coming",
+            "to come",
+            "came"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-56",
+      "title": "Remember doing vs remember to do",
+      "level": "B2",
+      "grammar": "Remember doing — помню, что сделал (воспоминание). Remember to do — не забыть сделать.",
+      "exercises": [
+        {
+          "q": "I remember ___ the door — I locked it.",
+          "options": [
+            "lock",
+            "locking",
+            "to lock",
+            "locked"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Remember ___ the door when you leave!",
+          "options": [
+            "lock",
+            "locking",
+            "to lock",
+            "locked"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "I'll never forget ___ him for the first time.",
+          "options": [
+            "meet",
+            "meeting",
+            "to meet",
+            "met"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Don't forget ___ him tomorrow.",
+          "options": [
+            "call",
+            "calling",
+            "to call",
+            "called"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-57",
+      "title": "Try / Need / Help",
+      "level": "B2",
+      "grammar": "Try doing — попробовать как эксперимент. Try to do — приложить усилие. Need — особенности. Help + (to) V.",
+      "exercises": [
+        {
+          "q": "If you can't sleep, try ___ some warm milk.",
+          "options": [
+            "drink",
+            "drinking",
+            "to drink",
+            "drank"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I tried ___ the door, but it was locked.",
+          "options": [
+            "open",
+            "opening",
+            "to open",
+            "opened"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "Could you help me ___ this box?",
+          "options": [
+            "lift",
+            "lifting",
+            "to lift",
+            "lifted"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The car needs ___ .",
+          "options": [
+            "wash",
+            "washing",
+            "to wash",
+            "washed"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-59",
+      "title": "Would rather / Prefer",
+      "level": "B2",
+      "grammar": "Would rather + V (без to). Prefer + -ing / to + V. Разница между предпочтениями.",
+      "exercises": [
+        {
+          "q": "I would rather ___ at home tonight.",
+          "options": [
+            "stay",
+            "staying",
+            "to stay",
+            "stayed"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She'd rather ___ the train.",
+          "options": [
+            "take",
+            "taking",
+            "to take",
+            "took"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I prefer ___ to watching TV.",
+          "options": [
+            "read",
+            "reading",
+            "to read",
+            "reads"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He prefers coffee ___ tea.",
+          "options": [
+            "than",
+            "to",
+            "from",
+            "for"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-61",
+      "title": "Be / Get used to",
+      "level": "B2",
+      "grammar": "Be used to — привык (состояние). Get used to — привыкаю (процесс). Всегда + -ing.",
+      "exercises": [
+        {
+          "q": "I'm used to ___ up early.",
+          "options": [
+            "get",
+            "getting",
+            "to get",
+            "got"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She's getting used to ___ here.",
+          "options": [
+            "live",
+            "living",
+            "to live",
+            "lived"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He was used to ___ alone.",
+          "options": [
+            "work",
+            "working",
+            "to work",
+            "worked"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I can't get used to ___ in this city.",
+          "options": [
+            "live",
+            "living",
+            "to live",
+            "lived"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-62",
+      "title": "Глагол + предлог + -ing",
+      "level": "B2",
+      "grammar": "Некоторые глаголы требуют предлог: think of, dream of, succeed in, apologise for, insist on.",
+      "exercises": [
+        {
+          "q": "I'm thinking of ___ a new job.",
+          "options": [
+            "find",
+            "finding",
+            "to find",
+            "found"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He succeeded in ___ the exam.",
+          "options": [
+            "pass",
+            "passing",
+            "to pass",
+            "passed"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She apologised for ___ late.",
+          "options": [
+            "be",
+            "being",
+            "to be",
+            "been"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "They insisted on ___ for dinner.",
+          "options": [
+            "pay",
+            "paying",
+            "to pay",
+            "paid"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-63",
+      "title": "It's no use, there's no point in",
+      "level": "B2",
+      "grammar": "Выражения с -ing: It's no use / There's no point in / It's worth / It's not worth.",
+      "exercises": [
+        {
+          "q": "It's no use ___ about it.",
+          "options": [
+            "worry",
+            "worrying",
+            "to worry",
+            "worried"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "There's no point in ___ him.",
+          "options": [
+            "call",
+            "calling",
+            "to call",
+            "called"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "It's worth ___ this film.",
+          "options": [
+            "watch",
+            "watching",
+            "to watch",
+            "watched"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "It's not worth ___ so much money on it.",
+          "options": [
+            "spend",
+            "spending",
+            "to spend",
+            "spent"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-66",
+      "title": "-ing clauses",
+      "level": "B2",
+      "grammar": "Причастные обороты с -ing: Feeling tired, I went to bed. Having finished work, she left.",
+      "exercises": [
+        {
+          "q": "___ tired, I went to bed.",
+          "options": [
+            "Feel",
+            "Feeling",
+            "To feel",
+            "Felt"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ finished my work, I went home.",
+          "options": [
+            "Have",
+            "Having",
+            "To have",
+            "Had"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ that he was late, she got angry.",
+          "options": [
+            "See",
+            "Seeing",
+            "To see",
+            "Saw"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ the news, he called his mum.",
+          "options": [
+            "Hear",
+            "Hearing",
+            "To hear",
+            "Heard"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-71",
+      "title": "The (school / the school)",
+      "level": "B2",
+      "grammar": "Без the — деятельность/учреждение (go to school, in hospital). С the — конкретное место/здание.",
+      "exercises": [
+        {
+          "q": "My son goes to ___ school.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "I went to ___ school to pick him up.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She's in ___ hospital.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "I visited her at ___ hospital.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-73",
+      "title": "The + прилагательное",
+      "level": "B2",
+      "grammar": "The + прилагательное = группа людей: the rich, the poor, the young, the old, the French.",
+      "exercises": [
+        {
+          "q": "___ rich should help the poor.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ young people love music.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "___ French are famous for their cuisine.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ old need our care.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-74",
+      "title": "Имена собственные и the (география)",
+      "level": "B2",
+      "grammar": "Города без the: London. Реки, моря, океаны с the: the Thames, the Black Sea.",
+      "exercises": [
+        {
+          "q": "I live in ___ London.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "The ship crossed ___ Atlantic Ocean.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We swam in ___ Black Sea.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ France is a beautiful country.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "ling-75",
+      "title": "Имена собственные и the (улицы, отели)",
+      "level": "B2",
+      "grammar": "Улицы и площади без the: Oxford Street, Red Square. Отели, театры, музеи с the: the Ritz, the Bolshoi.",
+      "exercises": [
+        {
+          "q": "She lives on ___ Oxford Street.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "We stayed at ___ Ritz.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "___ Red Square is in Moscow.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "We visited ___ British Museum.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-77",
+      "title": "Составные существительные",
+      "level": "B2",
+      "grammar": "Boy friend = boyfriend. Tooth brush = toothbrush. Или с дефисом: mother-in-law.",
+      "exercises": [
+        {
+          "q": "Как правильно?",
+          "options": [
+            "tooth brush",
+            "toothbrush",
+            "tooth-brush-хз",
+            "toothsbrush"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Множественное число 'mother-in-law':",
+          "options": [
+            "mother-in-laws",
+            "mothers-in-law",
+            "mothers-in-laws",
+            "mother-in-law"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "У меня есть ___ .",
+          "options": [
+            "boy friend",
+            "boyfriend",
+            "boy-friend-all",
+            "boysfriend"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Слово 'check-in' — это:",
+          "options": [
+            "checkin",
+            "check in",
+            "check-in",
+            "check_in"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-80",
+      "title": "My / Of mine / My own",
+      "level": "B2",
+      "grammar": "My friend = a friend of mine. My own = мой собственный. He's a friend of mine. I have my own room.",
+      "exercises": [
+        {
+          "q": "He's a friend of ___ .",
+          "options": [
+            "me",
+            "mine",
+            "my",
+            "I"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I have my ___ room.",
+          "options": [
+            "own",
+            "self",
+            "personal-only",
+            "own-self"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She's a colleague of ___ .",
+          "options": [
+            "us",
+            "our",
+            "ours",
+            "we"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "I want my ___ car.",
+          "options": [
+            "own",
+            "self",
+            "personal",
+            "alone"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-87",
+      "title": "All / Every / Whole",
+      "level": "B2",
+      "grammar": "All — все (множественное). Every — каждый (ед.). Whole — целый. All day / Every day / The whole day.",
+      "exercises": [
+        {
+          "q": "___ students passed.",
+          "options": [
+            "All",
+            "Every",
+            "Whole",
+            "None"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ student passed.",
+          "options": [
+            "All",
+            "Every",
+            "Whole",
+            "None"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I worked ___ day.",
+          "options": [
+            "all",
+            "every",
+            "whole",
+            "the whole"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "___ of us were tired.",
+          "options": [
+            "All",
+            "Every",
+            "Whole",
+            "None"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-88",
+      "title": "Each и Every",
+      "level": "B2",
+      "grammar": "Each — каждый по отдельности (2+). Every — все вместе (3+). Each student has a book. Every student has a book.",
+      "exercises": [
+        {
+          "q": "___ of the two students passed.",
+          "options": [
+            "Each",
+            "Every",
+            "All",
+            "Both"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ student in the class got a book.",
+          "options": [
+            "Each",
+            "Every",
+            "All",
+            "Both"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ of us has a role.",
+          "options": [
+            "Each",
+            "Every",
+            "All",
+            "Both"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I go there ___ day.",
+          "options": [
+            "each",
+            "every",
+            "all",
+            "both"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-90",
+      "title": "Relative Clauses без союзов",
+      "level": "B2",
+      "grammar": "Если that/who/which — дополнение, можно опустить. The book (that) I bought. The man (who) I met.",
+      "exercises": [
+        {
+          "q": "The book ___ I read was great. (можно опустить)",
+          "options": [
+            "that",
+            "who",
+            "whose",
+            "where"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The man ___ I met was kind.",
+          "options": [
+            "that",
+            "whose",
+            "where",
+            "when"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The film ___ we watched was boring.",
+          "options": [
+            "that",
+            "whose",
+            "where",
+            "who"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Is это правильный вариант? The book I bought...",
+          "options": [
+            "Да, that опущено",
+            "Нет, нужен that",
+            "Нужен which",
+            "Ошибка"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-91",
+      "title": "Whose / Whom / Where",
+      "level": "B2",
+      "grammar": "Whose — чей. Whom — кого (формально). Where — где. The man whose car was stolen...",
+      "exercises": [
+        {
+          "q": "The man ___ car was stolen called the police.",
+          "options": [
+            "who",
+            "whose",
+            "whom",
+            "where"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "This is the house ___ I was born.",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "where"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "The woman ___ I saw was tall.",
+          "options": [
+            "who",
+            "whose",
+            "whom",
+            "where"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "This is the place ___ we met.",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "where"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "ling-92",
+      "title": "Non-defining Relative Clauses",
+      "level": "B2",
+      "grammar": "Уточнение с запятыми. My brother, who lives in Paris, is a doctor. Нельзя that.",
+      "exercises": [
+        {
+          "q": "My brother, ___ lives in Paris, is a doctor.",
+          "options": [
+            "who",
+            "that",
+            "which",
+            "whose"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Paris, ___ is the capital of France, is beautiful.",
+          "options": [
+            "who",
+            "that",
+            "which",
+            "where"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "Можно ли использовать that?",
+          "options": [
+            "Да",
+            "Нет",
+            "Иногда",
+            "Зависит"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The sun, ___ rises in the east, is a star.",
+          "options": [
+            "who",
+            "which",
+            "that",
+            "whose"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-94",
+      "title": "-ing и -ed clauses",
+      "level": "B2",
+      "grammar": "Причастные обороты. The man standing there is my dad. The window broken yesterday was fixed.",
+      "exercises": [
+        {
+          "q": "The man ___ there is my father.",
+          "options": [
+            "stand",
+            "standing",
+            "to stand",
+            "stood"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The window ___ yesterday was fixed.",
+          "options": [
+            "break",
+            "breaking",
+            "broken",
+            "broke"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "The girl ___ the piano is my sister.",
+          "options": [
+            "play",
+            "playing",
+            "to play",
+            "played"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The letter ___ yesterday arrived today.",
+          "options": [
+            "send",
+            "sending",
+            "sent",
+            "sends"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-96",
+      "title": "Порядок прилагательных",
+      "level": "B2",
+      "grammar": "Порядок: opinion → size → age → shape → color → origin → material → purpose. A beautiful small old round brown Italian wooden table.",
+      "exercises": [
+        {
+          "q": "a ___ car",
+          "options": [
+            "red beautiful",
+            "beautiful red",
+            "red beautiful-small",
+            "beautiful-small-red"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "a ___ house",
+          "options": [
+            "big old wooden",
+            "old big wooden",
+            "wooden big old",
+            "old wooden big"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "a ___ bag",
+          "options": [
+            "leather black small",
+            "small black leather",
+            "black small leather",
+            "small leather black"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ girl",
+          "options": [
+            "young beautiful",
+            "beautiful young",
+            "young-beautiful",
+            "both possible"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-101",
+      "title": "Quite / Pretty / Rather / Fairly",
+      "level": "B2",
+      "grammar": "Quite — довольно (нареч. модификатор). Pretty — разговорное. Rather — скорее. Fairly — довольно (слабый).",
+      "exercises": [
+        {
+          "q": "It's ___ cold today.",
+          "options": [
+            "quite",
+            "very",
+            "so",
+            "such"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The film was ___ good, actually.",
+          "options": [
+            "pretty",
+            "such",
+            "so",
+            "too"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She's ___ shy.",
+          "options": [
+            "rather",
+            "such",
+            "so",
+            "too"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The exam was ___ easy.",
+          "options": [
+            "fairly",
+            "such",
+            "so",
+            "enough"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-104",
+      "title": "Сравнительная степень 3 (the...the)",
+      "level": "B2",
+      "grammar": "The + сравн. + the + сравн. = чем... тем. The more you study, the better you understand.",
+      "exercises": [
+        {
+          "q": "___ you study, the better you'll do.",
+          "options": [
+            "The more",
+            "More",
+            "Much",
+            "Many"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The earlier you come, ___ .",
+          "options": [
+            "the better",
+            "better",
+            "best",
+            "good"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The ___ you wait, the worse it gets.",
+          "options": [
+            "long",
+            "longer",
+            "longest",
+            "more long"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The more money he earns, ___ he wants.",
+          "options": [
+            "the more",
+            "more",
+            "most",
+            "much"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-109",
+      "title": "Even (+ even if)",
+      "level": "B2",
+      "grammar": "Even — даже. Even if — даже если. Even though — даже хотя. Даже усиливает.",
+      "exercises": [
+        {
+          "q": "___ my mum doesn't know.",
+          "options": [
+            "Even",
+            "Even if",
+            "Even though",
+            "Also"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ it rains, we'll go.",
+          "options": [
+            "Even",
+            "Even if",
+            "Even though",
+            "But"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ he was tired, he kept working.",
+          "options": [
+            "Even",
+            "Even if",
+            "Even though",
+            "But"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She likes everyone, ___ me.",
+          "options": [
+            "even",
+            "even if",
+            "even though",
+            "but"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-111",
+      "title": "In case",
+      "level": "B2",
+      "grammar": "In case — на случай если. Take an umbrella in case it rains. (НЕ will!).",
+      "exercises": [
+        {
+          "q": "Take an umbrella ___ it rains.",
+          "options": [
+            "if",
+            "in case",
+            "when",
+            "because"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I'll take some cash ___ they don't accept cards.",
+          "options": [
+            "if",
+            "in case",
+            "when",
+            "so"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ you need help, call me.",
+          "options": [
+            "In case",
+            "If",
+            "When",
+            "So"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Сохрани in case -- это...",
+          "options": [
+            "на случай если",
+            "если",
+            "когда",
+            "потому что"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-112",
+      "title": "Unless / As long as",
+      "level": "B2",
+      "grammar": "Unless = if not. As long as = при условии что. Unless you hurry, you'll be late.",
+      "exercises": [
+        {
+          "q": "___ you hurry, you'll be late.",
+          "options": [
+            "If",
+            "Unless",
+            "When",
+            "Because"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "You can go ___ you finish your homework.",
+          "options": [
+            "unless",
+            "as long as",
+            "though",
+            "although"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ it rains, we'll go out.",
+          "options": [
+            "Unless",
+            "If",
+            "When",
+            "So"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ you don't mind, I'll stay.",
+          "options": [
+            "Unless",
+            "If",
+            "When",
+            "Though"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-114",
+      "title": "Like vs As",
+      "level": "B2",
+      "grammar": "Like + сущ. (похож на). As + предложение/роль. She looks like her mum. She works as a doctor.",
+      "exercises": [
+        {
+          "q": "She looks ___ her mother.",
+          "options": [
+            "like",
+            "as",
+            "as if",
+            "such"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "He works ___ a doctor.",
+          "options": [
+            "like",
+            "as",
+            "as if",
+            "such"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "It tastes ___ chicken.",
+          "options": [
+            "like",
+            "as",
+            "as if",
+            "such"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Use it ___ a spoon.",
+          "options": [
+            "like",
+            "as",
+            "as if",
+            "such"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-115",
+      "title": "As if / As though",
+      "level": "B2",
+      "grammar": "As if / as though = как будто. He looks as if he's seen a ghost.",
+      "exercises": [
+        {
+          "q": "He looks ___ he's seen a ghost.",
+          "options": [
+            "like",
+            "as if",
+            "such as",
+            "so"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She talks ___ she knows everything.",
+          "options": [
+            "like",
+            "as if",
+            "such as",
+            "so"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "It looks ___ it's going to rain.",
+          "options": [
+            "like",
+            "as if",
+            "such",
+            "so"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He acts ___ he owns the place.",
+          "options": [
+            "like",
+            "as if",
+            "such",
+            "so"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-116",
+      "title": "For / During / While",
+      "level": "B2",
+      "grammar": "For + период (for 2 hours). During + сущ. (during the film). While + предложение (while I was sleeping).",
+      "exercises": [
+        {
+          "q": "I waited ___ two hours.",
+          "options": [
+            "during",
+            "for",
+            "while",
+            "since"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I fell asleep ___ the film.",
+          "options": [
+            "during",
+            "for",
+            "while",
+            "since"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "He called ___ I was cooking.",
+          "options": [
+            "during",
+            "for",
+            "while",
+            "since"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We talked ___ the whole evening.",
+          "options": [
+            "during",
+            "for",
+            "while",
+            "since"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-117",
+      "title": "By / Until / By the time",
+      "level": "B2",
+      "grammar": "By — к моменту (by 5pm). Until — до (until 5pm, продолжалось). By the time — к тому времени как.",
+      "exercises": [
+        {
+          "q": "I'll finish it ___ 5pm.",
+          "options": [
+            "until",
+            "by",
+            "till",
+            "since"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I worked ___ 5pm.",
+          "options": [
+            "until",
+            "by",
+            "since",
+            "for"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ we arrived, they had left.",
+          "options": [
+            "Until",
+            "By the time",
+            "Since",
+            "For"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Wait here ___ I come back.",
+          "options": [
+            "until",
+            "by",
+            "since",
+            "for"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-122",
+      "title": "At the end vs In the end",
+      "level": "B2",
+      "grammar": "At the end (of) — в конце чего-то. In the end — в итоге, в конечном счёте.",
+      "exercises": [
+        {
+          "q": "___ the film, everyone cried.",
+          "options": [
+            "At the end of",
+            "In the end of",
+            "At the end",
+            "In the end"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "We tried hard, but ___ we failed.",
+          "options": [
+            "at the end",
+            "in the end",
+            "at the end of",
+            "in the end of"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "___ the day, I was exhausted.",
+          "options": [
+            "At the end of",
+            "In the end of",
+            "At the end",
+            "In the end"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "___ , everything worked out fine.",
+          "options": [
+            "At the end",
+            "In the end",
+            "At the end of",
+            "In end"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-123",
+      "title": "To / At / In / Into",
+      "level": "B2",
+      "grammar": "To — направление. At/In — местоположение. Into — внутрь. Go to school. Arrive at the station. Walk into the room.",
+      "exercises": [
+        {
+          "q": "I go ___ school every morning.",
+          "options": [
+            "at",
+            "in",
+            "to",
+            "into"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We arrived ___ the airport.",
+          "options": [
+            "to",
+            "at",
+            "into",
+            "to"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She walked ___ the room.",
+          "options": [
+            "to",
+            "at",
+            "into",
+            "in"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "He lives ___ London.",
+          "options": [
+            "to",
+            "at",
+            "in",
+            "into"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-124",
+      "title": "In / At / On (устойчивые сочетания)",
+      "level": "B2",
+      "grammar": "At night, in the morning, on Friday, at Christmas, on my birthday, in 2020. Запомнить устойчивые.",
+      "exercises": [
+        {
+          "q": "I can't sleep ___ night.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "for"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I'll see you ___ Friday.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "for"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We visit family ___ Christmas.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "for"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She was born ___ May.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "for"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-125",
+      "title": "By",
+      "level": "B2",
+      "grammar": "By = не позднее чем (by 5pm). By + транспорт (by car, by train). By + способ (by email).",
+      "exercises": [
+        {
+          "q": "I'll finish it ___ 5pm.",
+          "options": [
+            "at",
+            "in",
+            "by",
+            "for"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "I usually travel ___ train.",
+          "options": [
+            "on",
+            "in",
+            "by",
+            "with"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "Send it ___ email.",
+          "options": [
+            "on",
+            "in",
+            "by",
+            "with"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "We went ___ car.",
+          "options": [
+            "on",
+            "in",
+            "by",
+            "with"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-126",
+      "title": "Существительное + предлог",
+      "level": "B2",
+      "grammar": "Устойчивые сочетания: reason for, solution to, advantage of, interest in, increase in, demand for.",
+      "exercises": [
+        {
+          "q": "What's the reason ___ your delay?",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The solution ___ the problem is simple.",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "in"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "One advantage ___ this method...",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "in"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She has a strong interest ___ art.",
+          "options": [
+            "on",
+            "in",
+            "at",
+            "for"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-127",
+      "title": "Прилагательное + предлог 1",
+      "level": "B2",
+      "grammar": "Устойчивые: good at, interested in, afraid of, angry with, worried about, tired of.",
+      "exercises": [
+        {
+          "q": "She's good ___ maths.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "for"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I'm interested ___ history.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "for"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "He's afraid ___ dogs.",
+          "options": [
+            "from",
+            "of",
+            "for",
+            "to"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I'm worried ___ the exam.",
+          "options": [
+            "of",
+            "about",
+            "for",
+            "in"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-128",
+      "title": "Прилагательное + предлог 2",
+      "level": "B2",
+      "grammar": "Продолжение: proud of, famous for, responsible for, similar to, different from, married to.",
+      "exercises": [
+        {
+          "q": "I'm proud ___ you.",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "in"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Paris is famous ___ the Eiffel Tower.",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "She's responsible ___ the project.",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "This is similar ___ that.",
+          "options": [
+            "of",
+            "for",
+            "to",
+            "with"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-130",
+      "title": "Глагол + предлог 2",
+      "level": "B2",
+      "grammar": "Продолжение: apologise for, accuse of, insist on, rely on, congratulate on, suffer from.",
+      "exercises": [
+        {
+          "q": "She apologised ___ being late.",
+          "options": [
+            "at",
+            "for",
+            "to",
+            "of"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He accused me ___ lying.",
+          "options": [
+            "at",
+            "for",
+            "of",
+            "with"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "They insisted ___ paying.",
+          "options": [
+            "at",
+            "for",
+            "on",
+            "in"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "Don't rely ___ him.",
+          "options": [
+            "at",
+            "for",
+            "on",
+            "in"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-131",
+      "title": "Глагол + предлог 3",
+      "level": "B2",
+      "grammar": "Продолжение: think of, dream of, believe in, succeed in, result in, deal with, agree with.",
+      "exercises": [
+        {
+          "q": "I'm thinking ___ buying a car.",
+          "options": [
+            "of",
+            "for",
+            "at",
+            "in"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I believe ___ you.",
+          "options": [
+            "at",
+            "in",
+            "of",
+            "for"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "We agreed ___ the price.",
+          "options": [
+            "to",
+            "with",
+            "on",
+            "in"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "She succeeded ___ passing the exam.",
+          "options": [
+            "at",
+            "in",
+            "of",
+            "on"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-132",
+      "title": "Глагол + предлог 4",
+      "level": "B2",
+      "grammar": "Продолжение: remind of, warn about, complain about, hear from/about, ask about, care about.",
+      "exercises": [
+        {
+          "q": "She reminds me ___ my sister.",
+          "options": [
+            "of",
+            "about",
+            "for",
+            "with"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I warned him ___ the danger.",
+          "options": [
+            "of",
+            "about",
+            "on",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He complained ___ the food.",
+          "options": [
+            "of",
+            "about",
+            "for",
+            "on"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I haven't heard ___ him for ages.",
+          "options": [
+            "of",
+            "from",
+            "about",
+            "for"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-133",
+      "title": "Глагол + предлог 5",
+      "level": "B2",
+      "grammar": "Продолжение: prepare for, wait on, count on, refer to, point at/to, look forward to (-ing).",
+      "exercises": [
+        {
+          "q": "I'm looking forward ___ seeing you.",
+          "options": [
+            "to",
+            "for",
+            "at",
+            "on"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She prepared ___ the exam.",
+          "options": [
+            "to",
+            "for",
+            "at",
+            "on"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Can I count ___ you?",
+          "options": [
+            "at",
+            "on",
+            "for",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He referred ___ my article.",
+          "options": [
+            "at",
+            "on",
+            "to",
+            "for"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "ling-135",
+      "title": "Фразовые глаголы: Out (продолжение)",
+      "level": "B2",
+      "grammar": "Work out, sort out, carry out, point out, run out of, turn out.",
+      "exercises": [
+        {
+          "q": "I need to ___ out this problem.",
+          "options": [
+            "work",
+            "run",
+            "carry",
+            "sort"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "We ran ___ of milk.",
+          "options": [
+            "out",
+            "in",
+            "on",
+            "off"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Let me ___ out one thing.",
+          "options": [
+            "point",
+            "run",
+            "sort",
+            "carry"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "It ___ out that she was right.",
+          "options": [
+            "turned",
+            "ran",
+            "sorted",
+            "carried"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-137",
+      "title": "Фразовые глаголы: On и Off 2",
+      "level": "B2",
+      "grammar": "Go on (продолжать), carry on (продолжать), put off (отложить), call off (отменить), show off (хвастаться).",
+      "exercises": [
+        {
+          "q": "They put ___ the meeting until Friday.",
+          "options": [
+            "on",
+            "off",
+            "up",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "The concert was called ___ .",
+          "options": [
+            "on",
+            "off",
+            "up",
+            "in"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "Please carry ___ with your work.",
+          "options": [
+            "on",
+            "off",
+            "up",
+            "in"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "He likes to show ___ his new car.",
+          "options": [
+            "on",
+            "off",
+            "up",
+            "in"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-138",
+      "title": "Фразовые глаголы: Up и Down",
+      "level": "B2",
+      "grammar": "Up — завершение/увеличение. Down — уменьшение/запись. Give up. Grow up. Look up. Turn up/down.",
+      "exercises": [
+        {
+          "q": "I'll ___ up at 7am tomorrow.",
+          "options": [
+            "wake",
+            "give",
+            "look",
+            "turn"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Don't ___ up your dreams!",
+          "options": [
+            "wake",
+            "give",
+            "look",
+            "turn"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I need to ___ up this word in the dictionary.",
+          "options": [
+            "wake",
+            "give",
+            "look",
+            "turn"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "Please turn the music ___ .",
+          "options": [
+            "up",
+            "down",
+            "on",
+            "off"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-139",
+      "title": "Фразовые глаголы: Up (продолжение)",
+      "level": "B2",
+      "grammar": "Set up (основать), take up (заняться), make up (придумать/помириться), end up (закончить), break up (расстаться).",
+      "exercises": [
+        {
+          "q": "They ___ up a new company.",
+          "options": [
+            "set",
+            "took",
+            "made",
+            "broke"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I want to ___ up a new hobby.",
+          "options": [
+            "set",
+            "take",
+            "make",
+            "break"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He ___ up a story.",
+          "options": [
+            "set",
+            "took",
+            "made",
+            "broke"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "They ___ up after 2 years.",
+          "options": [
+            "set",
+            "took",
+            "made",
+            "broke"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "ling-140",
+      "title": "Фразовые глаголы: Away и Back",
+      "level": "B2",
+      "grammar": "Away — прочь/продолжая. Back — назад. Go away. Give away. Come back. Pay back.",
+      "exercises": [
+        {
+          "q": "Please go ___ — I need to work.",
+          "options": [
+            "away",
+            "back",
+            "up",
+            "off"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Come ___ soon!",
+          "options": [
+            "away",
+            "back",
+            "up",
+            "off"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "He gave ___ his old clothes.",
+          "options": [
+            "away",
+            "back",
+            "up",
+            "off"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I'll pay you ___ tomorrow.",
+          "options": [
+            "away",
+            "back",
+            "up",
+            "off"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ling-141",
+      "title": "Фразовые глаголы: Take",
+      "level": "B2",
+      "grammar": "Take after (быть похожим на), take off (снять/взлететь), take on (нанять), take up (заняться).",
+      "exercises": [
+        {
+          "q": "She ___ after her mother.",
+          "options": [
+            "takes",
+            "gives",
+            "looks",
+            "puts"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The plane ___ off at 6am.",
+          "options": [
+            "takes",
+            "gives",
+            "looks",
+            "puts"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "They ___ on new staff every month.",
+          "options": [
+            "take",
+            "give",
+            "look",
+            "put"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I want to ___ up yoga.",
+          "options": [
+            "take",
+            "give",
+            "look",
+            "put"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-142",
+      "title": "Фразовые глаголы: Look",
+      "level": "B2",
+      "grammar": "Look after (заботиться), look for (искать), look forward to (с нетерпением ждать), look up (искать инфу), look into (разбираться).",
+      "exercises": [
+        {
+          "q": "Can you ___ after my cat?",
+          "options": [
+            "look",
+            "take",
+            "put",
+            "give"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I'm ___ for my keys.",
+          "options": [
+            "looking",
+            "taking",
+            "putting",
+            "giving"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I'm looking forward ___ the holiday.",
+          "options": [
+            "for",
+            "to",
+            "at",
+            "on"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "I'll ___ into the matter.",
+          "options": [
+            "look",
+            "take",
+            "put",
+            "give"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-143",
+      "title": "Фразовые глаголы: Get",
+      "level": "B2",
+      "grammar": "Get up (вставать), get on/off (садиться/выходить), get along with (ладить), get over (преодолеть), get by (справляться).",
+      "exercises": [
+        {
+          "q": "I ___ up at 7am every day.",
+          "options": [
+            "get",
+            "take",
+            "put",
+            "look"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Do you ___ along with your colleagues?",
+          "options": [
+            "get",
+            "take",
+            "put",
+            "look"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She ___ over her illness quickly.",
+          "options": [
+            "got",
+            "took",
+            "put",
+            "looked"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "We can ___ by on this salary.",
+          "options": [
+            "get",
+            "take",
+            "put",
+            "look"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-144",
+      "title": "Фразовые глаголы: Put",
+      "level": "B2",
+      "grammar": "Put on (надеть), put off (отложить), put up with (терпеть), put out (погасить), put away (убрать).",
+      "exercises": [
+        {
+          "q": "___ on your coat — it's cold.",
+          "options": [
+            "Put",
+            "Take",
+            "Give",
+            "Look"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "Don't ___ off till tomorrow what you can do today.",
+          "options": [
+            "put",
+            "take",
+            "give",
+            "look"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "I can't ___ up with this noise.",
+          "options": [
+            "put",
+            "take",
+            "give",
+            "look"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "The firefighters ___ out the fire.",
+          "options": [
+            "put",
+            "took",
+            "gave",
+            "looked"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "ling-145",
+      "title": "Фразовые глаголы: Come",
+      "level": "B2",
+      "grammar": "Come across (наткнуться), come up with (придумать), come round (зайти), come true (сбыться), come down with (заболеть).",
+      "exercises": [
+        {
+          "q": "I came ___ an old photo yesterday.",
+          "options": [
+            "across",
+            "up",
+            "round",
+            "down"
+          ],
+          "correct": 0
+        },
+        {
+          "q": "She came ___ with a great idea.",
+          "options": [
+            "across",
+            "up",
+            "round",
+            "down"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "My dream came ___ .",
+          "options": [
+            "across",
+            "up",
+            "round",
+            "true"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "He came ___ with a cold.",
+          "options": [
+            "across",
+            "up",
+            "round",
+            "down"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  ]
+}

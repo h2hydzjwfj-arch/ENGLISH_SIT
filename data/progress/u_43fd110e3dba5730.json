@@ -1,0 +1,24 @@
+{
+  "id": "u_43fd110e3dba5730",
+  "createdAt": 1790930605183,
+  "level": "A2",
+  "testScores": {
+    "grammar": 40,
+    "reading": 33,
+    "listening": 0,
+    "writing": 29,
+    "speaking": 47
+  },
+  "testPercent": 30,
+  "progressToNext": 25,
+  "streak": 1,
+  "lastVisit": 1790932562761,
+  "lastStreakDay": "2026-10-02",
+  "lessonsDone": 0,
+  "unitProgress": {},
+  "vocabulary": [],
+  "achievements": [],
+  "history": [],
+  "lessonHistory": [],
+  "testTakenAt": 1790932533757
+}
