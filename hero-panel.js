@@ -1,87 +1,73 @@
 (function () {
-  if (window.__heroPanel) return;
-  window.__heroPanel = true;
+  if (window.__heroPaper) return;
+  window.__heroPaper = true;
 
-  var PHRASES = [
-    { level: 'A1', text: 'She is a teacher. I am a student.' },
-    { level: 'A2', text: 'I went to London last year.' },
-    { level: 'B1', text: 'If I had more time, I would travel.' },
-    { level: 'B1', text: 'I have been learning English for 3 years.' },
-    { level: 'B2', text: 'The report was written by the manager.' },
-    { level: 'B2', text: 'He said he had already finished.' },
-    { level: 'C1', text: 'Hardly had he arrived when it started raining.' },
-    { level: 'C1', text: 'No sooner had she left than the phone rang.' },
-    { level: 'C2', text: 'The more you practise, the more fluent you become.' },
-    { level: 'C2', text: 'Were I in your position, I would reconsider.' }
+  // Предложения с ошибками и исправлениями
+  var SENTENCES = [
+    { before: 'She ',    wrong: 'go',           after: ' to school every day.',  right: 'goes' },
+    { before: 'I have ', wrong: 'saw',          after: ' this film before.',     right: 'seen' },
+    { before: 'If I ',   wrong: 'was',          after: ' you, I would go.',      right: 'were' },
+    { before: 'He ',     wrong: "don't",        after: ' like coffee.',          right: "doesn't" },
+    { before: 'They ',   wrong: 'was',          after: ' at home yesterday.',    right: 'were' },
+    { before: 'She said she ', wrong: 'will',   after: ' come later.',           right: 'would' },
+    { before: 'The book was ', wrong: 'wrote',  after: ' by Hemingway.',         right: 'written' },
+    { before: 'I ',      wrong: 'am living',    after: ' here since 2020.',      right: 'have been living' }
   ];
 
   function init() {
-    var textEl = document.getElementById('heroPhraseText');
-    var prefixEl = document.querySelector('.hero-panel-prefix');
-    var fills = document.querySelectorAll('.hero-panel-skill-fill');
-    if (!textEl || !prefixEl) return;
+    var sentence = document.getElementById('paperSentence');
+    var check = document.getElementById('paperCheck');
+    if (!sentence) return;
 
-    // Фразы: печатаем, ждём, стираем, следующая
     var idx = 0;
-    var charIdx = 0;
-    var phase = 'typing'; // typing | waiting | erasing
 
-    function tick() {
-      var p = PHRASES[idx];
-      if (phase === 'typing') {
-        charIdx++;
-        textEl.textContent = p.text.slice(0, charIdx) + '\u2588';
-        if (charIdx >= p.text.length) {
-          phase = 'waiting';
-          textEl.textContent = p.text + '\u2588';
-          setTimeout(tick, 2600);
-          return;
-        }
-        setTimeout(tick, 38 + Math.random() * 42);
-      } else if (phase === 'waiting') {
-        phase = 'erasing';
-        setTimeout(tick, 100);
-      } else {
-        charIdx -= 3;
-        if (charIdx <= 0) {
-          charIdx = 0;
-          idx = (idx + 1) % PHRASES.length;
-          prefixEl.textContent = 'Grammar · ' + PHRASES[idx].level;
-          phase = 'typing';
-          textEl.textContent = '';
-          setTimeout(tick, 320);
-          return;
-        }
-        textEl.textContent = p.text.slice(0, charIdx) + '\u2588';
-        setTimeout(tick, 16);
-      }
+    function render(item) {
+      return ''
+        + '<span class="paper-before">' + item.before + '</span>'
+        + '<span class="paper-wrong">'
+        +   '<span class="paper-correction">' + item.right + '</span>'
+        +   item.wrong
+        + '</span>'
+        + '<span class="paper-after">' + item.after + '</span>';
     }
 
-    // Уровень первой фразы
-    prefixEl.textContent = 'Grammar · ' + PHRASES[0].level;
-    setTimeout(tick, 500);
+    function play() {
+      var item = SENTENCES[idx];
+      sentence.classList.remove('fade-out');
+      sentence.innerHTML = render(item);
+      if (check) check.classList.remove('on');
 
-    // Полоски: заполняем, держим, сбрасываем
-    function animateBars() {
-      fills.forEach(function (f, i) {
-        setTimeout(function () {
-          f.style.width = f.dataset.w;
-        }, i * 140);
-      });
+      var wrong = sentence.querySelector('.paper-wrong');
+
+      // 1. Предложение появляется, ждём 1.6 сек
       setTimeout(function () {
-        fills.forEach(function (f) {
-          f.style.transition = 'width 0.5s ease';
-          f.style.width = '0';
-        });
+        // 2. Красная линия зачёркивания
+        if (wrong) wrong.classList.add('struck');
+
+        // 3. Красная поправка появляется
         setTimeout(function () {
-          fills.forEach(function (f) {
-            f.style.transition = 'width 1.4s cubic-bezier(0.16, 1, 0.3, 1)';
-          });
-          animateBars();
-        }, 700);
-      }, 5000);
+          if (wrong) wrong.classList.add('corrected');
+
+          // 4. Галочка "checked by teacher" внизу
+          setTimeout(function () {
+            if (check) check.classList.add('on');
+
+            // 5. Пауза 2.2 сек, потом fade-out и следующее
+            setTimeout(function () {
+              sentence.classList.add('fade-out');
+              if (check) check.classList.remove('on');
+              setTimeout(function () {
+                idx = (idx + 1) % SENTENCES.length;
+                play();
+              }, 500);
+            }, 2200);
+          }, 250);
+        }, 500);
+      }, 1600);
     }
-    setTimeout(animateBars, 400);
+
+    // Старт через 600 мс после загрузки
+    setTimeout(play, 600);
   }
 
   if (document.readyState === 'loading') {
