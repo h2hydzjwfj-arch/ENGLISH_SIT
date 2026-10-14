@@ -88,6 +88,9 @@
     root.appendChild(figure);
     document.body.appendChild(root);
 
+    // ============ DRAG ============
+    initDrag();
+
     bubbleText = bubble.querySelector('.ioma-robot-bubble-text');
     bubbleClose = bubble.querySelector('.ioma-robot-bubble-close');
     input = bubble.querySelector('.ioma-robot-input');
@@ -106,7 +109,8 @@
       closeAll();
     });
 
-    figure.addEventListener('click', function(){
+    figure.addEventListener('click', function(e){
+      if (drag.moved){ drag.moved = false; return; }
       if (!expanded) openExpanded();
       else input.focus();
     });
@@ -134,6 +138,99 @@
       }
     }, 3000);
   }
+
+
+  // ============ DRAG ============
+  var POS_KEY = 'ioma_robot_pos_v2';
+  var drag = { active: false, moved: false, startX: 0, startY: 0, startL: 0, startT: 0 };
+
+  function applyPosition(){
+    try {
+      var raw = localStorage.getItem(POS_KEY);
+      if (!raw) return;
+      var p = JSON.parse(raw);
+      if (typeof p.x !== 'number' || typeof p.y !== 'number') return;
+      var w = window.innerWidth, h = window.innerHeight;
+      var x = Math.max(8, Math.min(p.x, w - 130));
+      var y = Math.max(8, Math.min(p.y, h - 150));
+      root.style.left = x + 'px';
+      root.style.top = y + 'px';
+      root.style.right = 'auto';
+      root.style.bottom = 'auto';
+    } catch(e){}
+  }
+
+  function savePosition(){
+    try {
+      var r = root.getBoundingClientRect();
+      localStorage.setItem(POS_KEY, JSON.stringify({ x: r.left, y: r.top }));
+    } catch(e){}
+  }
+
+  function initDrag(){
+    applyPosition();
+
+    figure.style.cursor = 'grab';
+    figure.style.touchAction = 'none';
+    figure.style.userSelect = 'none';
+
+    figure.addEventListener('pointerdown', function(e){
+      if (e.button !== 0 && e.pointerType === 'mouse') return;
+      var rect = root.getBoundingClientRect();
+      drag.active = true;
+      drag.moved = false;
+      drag.startX = e.clientX;
+      drag.startY = e.clientY;
+      drag.startL = rect.left;
+      drag.startT = rect.top;
+      root.classList.add('dragging');
+      try { figure.setPointerCapture(e.pointerId); } catch(err){}
+      e.stopPropagation();
+    });
+
+    document.addEventListener('pointermove', function(e){
+      if (!drag.active) return;
+      var dx = e.clientX - drag.startX;
+      var dy = e.clientY - drag.startY;
+      if (Math.abs(dx) > 4 || Math.abs(dy) > 4) drag.moved = true;
+      var w = window.innerWidth, h = window.innerHeight;
+      var nx = Math.max(8, Math.min(drag.startL + dx, w - 130));
+      var ny = Math.max(8, Math.min(drag.startT + dy, h - 150));
+      root.style.left = nx + 'px';
+      root.style.top = ny + 'px';
+      root.style.right = 'auto';
+      root.style.bottom = 'auto';
+    });
+
+    document.addEventListener('pointerup', function(e){
+      if (!drag.active) return;
+      drag.active = false;
+      root.classList.remove('dragging');
+      try { figure.releasePointerCapture(e.pointerId); } catch(err){}
+      savePosition();
+    });
+
+    window.addEventListener('resize', function(){
+      var r = root.getBoundingClientRect();
+      var w = window.innerWidth, h = window.innerHeight;
+      if (r.right > w || r.bottom > h){
+        root.style.left = Math.max(8, w - 130) + 'px';
+        root.style.top = Math.max(8, h - 150) + 'px';
+        root.style.right = 'auto';
+        root.style.bottom = 'auto';
+      }
+    });
+  }
+
+  // Сброс позиции робота (в консоли: robotReset())
+  window.robotReset = function(){
+    try { localStorage.removeItem(POS_KEY); } catch(e){}
+    root.style.left = '';
+    root.style.top = '';
+    root.style.right = '';
+    root.style.bottom = '';
+    location.reload();
+  };
 
   function hideTip(){
     if (miniTip) miniTip.classList.remove('show');
