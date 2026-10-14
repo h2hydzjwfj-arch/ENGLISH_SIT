@@ -2936,10 +2936,11 @@ textarea,
 }
 
 
-/* ═══════════════ HERO + PAPER v5 (заголовок стиль) ═══════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
 
-/* Обёртка hero — центрируем весь блок */
+
+/* ═══════════════ HERO + PAPER v6 (рукописный, тонкий) ═══════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Caveat:wght@400;500;600&display=swap');
+
 .hero {
   display: flex !important;
   align-items: center !important;
@@ -2967,7 +2968,6 @@ textarea,
 .hero-copy.hero-with-paper > .hero-actions { grid-column: 1 !important; grid-row: 4 !important; margin: 12px 0 24px !important; }
 .hero-copy.hero-with-paper > .hero-stats { grid-column: 1 !important; grid-row: 5 !important; padding-top: 24px !important; }
 
-/* Лист — справа, по центру */
 .hero-paper {
   grid-column: 2 !important;
   grid-row: 1 / 6 !important;
@@ -2980,7 +2980,6 @@ textarea,
 }
 .hero-paper:hover { transform: rotate(0.4deg) scale(1.01) !important; }
 
-/* ── Сам лист ── */
 .paper {
   position: relative !important;
   width: 100% !important;
@@ -2992,15 +2991,15 @@ textarea,
       to bottom,
       transparent 0px,
       transparent 35px,
-      rgba(100, 145, 195, 0.5) 35px,
-      rgba(100, 145, 195, 0.5) 36px
+      rgba(100, 145, 195, 0.45) 35px,
+      rgba(100, 145, 195, 0.45) 36px
     ) !important;
   background-position: 0 54px !important;
-  border: 1px solid rgba(0, 0, 0, 0.07) !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
   box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.05),
-    0 8px 24px -10px rgba(0, 0, 0, 0.18),
-    0 24px 48px -20px rgba(0, 0, 0, 0.15) !important;
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 8px 24px -10px rgba(0, 0, 0, 0.14),
+    0 24px 48px -20px rgba(0, 0, 0, 0.12) !important;
   padding: 28px 74px 24px 28px !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -3012,14 +3011,8 @@ textarea,
   top: 0 !important;
   bottom: 0 !important;
   right: 56px !important;
-  width: 1.2px !important;
-  background: linear-gradient(
-    to bottom,
-    rgba(210, 90, 90, 0.2) 0%,
-    rgba(210, 90, 90, 0.6) 8%,
-    rgba(210, 90, 90, 0.6) 92%,
-    rgba(210, 90, 90, 0.2) 100%
-  ) !important;
+  width: 1px !important;
+  background: rgba(200, 100, 100, 0.35) !important;
 }
 
 .paper-holes {
@@ -3038,9 +3031,7 @@ textarea,
   height: 15px !important;
   border-radius: 50% !important;
   background: #ffffff !important;
-  box-shadow:
-    inset 0 1.5px 2px rgba(0, 0, 0, 0.15),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.8) !important;
+  box-shadow: inset 0 1.5px 2px rgba(0, 0, 0, 0.12) !important;
   display: block !important;
 }
 
@@ -3049,14 +3040,14 @@ textarea,
   z-index: 2 !important;
 }
 
-/* ═══ ГЛАВНОЕ: текст как заголовок сайта ═══ */
+/* ═══ ТЕКСТ — рукописный, тонкий ═══ */
 .paper-sentence {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
-  font-size: 26px !important;
+  font-family: 'Kalam', 'Caveat', cursive !important;
+  font-size: 28px !important;
   line-height: 36px !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.02em !important;
-  color: #0a0a0a !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.2px !important;
+  color: #354a6b !important;
   min-height: 108px !important;
   display: block !important;
   transition: opacity 0.6s ease !important;
@@ -3071,35 +3062,35 @@ textarea,
   font-weight: inherit !important;
   color: inherit !important;
 }
+
+/* ═══ ТОНКАЯ КРАСНАЯ РУЧКА — зачёркивание 1px ═══ */
 .paper-wrong::after {
   content: "" !important;
   position: absolute !important;
-  left: -4px !important;
-  right: -4px !important;
+  left: -2px !important;
+  right: -2px !important;
   top: 55% !important;
-  height: 3px !important;
-  background: linear-gradient(to right, #e84d3d 0%, #c42e1e 100%) !important;
-  border-radius: 2px !important;
+  height: 1px !important;
+  background: #d4483a !important;
   transform: scaleX(0) !important;
   transform-origin: left !important;
-  transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1) !important;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1) !important;
   pointer-events: none !important;
-  box-shadow: 0 0 2px rgba(220, 60, 45, 0.5) !important;
 }
 .paper-wrong.struck::after { transform: scaleX(1) !important; }
 
-/* Красная поправка — рукописная Caveat (учитель) */
+/* ═══ ПОПРАВКА УЧИТЕЛЯ — тонкая, рукописная ═══ */
 .paper-correction {
   position: absolute !important;
   bottom: 100% !important;
   left: 50% !important;
-  margin-bottom: -4px !important;
-  transform: translateX(-50%) translateY(8px) !important;
-  color: #d63a2a !important;
+  margin-bottom: -2px !important;
+  transform: translateX(-50%) translateY(6px) !important;
+  color: #d4483a !important;
   font-family: 'Caveat', cursive !important;
-  font-size: 32px !important;
+  font-size: 26px !important;
   line-height: 1 !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   white-space: nowrap !important;
   opacity: 0 !important;
   pointer-events: none !important;
@@ -3112,19 +3103,19 @@ textarea,
 .paper-correction::before {
   content: "✓ " !important;
   font-family: 'Caveat', cursive !important;
-  font-size: 26px !important;
-  font-weight: 600 !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
 }
 
-/* Подпись учителя внизу */
+/* ═══ ПОДПИСЬ — тонко ═══ */
 .paper-footer {
   position: absolute !important;
   bottom: 14px !important;
   left: 24px !important;
   font-family: 'Caveat', cursive !important;
-  font-size: 19px !important;
-  font-weight: 600 !important;
-  color: rgba(170, 55, 45, 0.75) !important;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: rgba(190, 80, 70, 0.7) !important;
   letter-spacing: 0.3px !important;
   opacity: 0 !important;
   transform: translateY(4px) !important;
@@ -3163,6 +3154,6 @@ textarea,
   .paper::before { right: 46px !important; }
   .paper-holes { right: 10px !important; }
   .paper-holes span { width: 12px !important; height: 12px !important; }
-  .paper-sentence { font-size: 20px !important; line-height: 28px !important; }
-  .paper-correction { font-size: 26px !important; }
+  .paper-sentence { font-size: 22px !important; line-height: 30px !important; }
+  .paper-correction { font-size: 22px !important; }
 }
