@@ -11,3 +11,10 @@ _trash/
 *.bak
 *.bak_*
 *.pre-*
+# Данные пользователей
+data/progress/
+data/users.json
+data/tts-cache/
+data/articles-cache/
+*.backup-*
+check-ai.sh
