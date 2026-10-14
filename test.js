@@ -99,7 +99,7 @@
           } else {
             show('reading');
           }
-        }, 600);
+        }, 200);
       });
     });
     updateNav();
@@ -125,7 +125,7 @@
           // Если все вопросы отвечены — авто-переход
           var allAnswered = state.readingAnswers.every(function(a){ return a != null; });
           if (allAnswered){
-            setTimeout(function(){ show('listening'); }, 700);
+            setTimeout(function(){ show('listening'); }, 200);
           }
         });
       });
@@ -145,7 +145,7 @@
         state.listeningAnswer = Number(btn.getAttribute('data-i'));
         renderListening();
         updateNav();
-        setTimeout(function(){ show('writing'); }, 700);
+        setTimeout(function(){ show('writing'); }, 200);
       });
     });
   }

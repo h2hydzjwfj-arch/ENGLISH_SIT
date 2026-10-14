@@ -87,9 +87,19 @@
       + '</div>';
     card.querySelectorAll('.q-option').forEach(function(btn){
       btn.addEventListener('click', function(){
+        if (state.grammarAnswers[state.grammarIdx] != null) return; // уже отвечено
         state.grammarAnswers[state.grammarIdx] = Number(btn.getAttribute('data-i'));
         renderGrammar();
         updateNav();
+        // Авто-переход через 600 мс
+        setTimeout(function(){
+          if (state.grammarIdx < GRAMMAR.length - 1){
+            state.grammarIdx++;
+            renderGrammar();
+          } else {
+            show('reading');
+          }
+        }, 600);
       });
     });
     updateNav();
@@ -108,9 +118,15 @@
     wrap.querySelectorAll('.rq').forEach(function(el, qi){
       el.querySelectorAll('.q-option').forEach(function(btn){
         btn.addEventListener('click', function(){
+          if (state.readingAnswers[qi] != null) return;
           state.readingAnswers[qi] = Number(btn.getAttribute('data-i'));
           renderReading();
           updateNav();
+          // Если все вопросы отвечены — авто-переход
+          var allAnswered = state.readingAnswers.every(function(a){ return a != null; });
+          if (allAnswered){
+            setTimeout(function(){ show('listening'); }, 700);
+          }
         });
       });
     });
@@ -125,9 +141,11 @@
       + '</div>';
     wrap.querySelectorAll('.q-option').forEach(function(btn){
       btn.addEventListener('click', function(){
+        if (state.listeningAnswer != null) return;
         state.listeningAnswer = Number(btn.getAttribute('data-i'));
         renderListening();
         updateNav();
+        setTimeout(function(){ show('writing'); }, 700);
       });
     });
   }
