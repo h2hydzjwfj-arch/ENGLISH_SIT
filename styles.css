@@ -2934,3 +2934,235 @@ textarea,
   .paper-sentence { font-size: 22px !important; line-height: 28px !important; }
   .paper-correction { font-size: 20px !important; }
 }
+
+
+/* ═══════════════ HERO + PAPER v5 (заголовок стиль) ═══════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
+
+/* Обёртка hero — центрируем весь блок */
+.hero {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: calc(100vh - 200px) !important;
+  padding: 40px !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.hero-copy.hero-with-paper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 440px !important;
+  grid-template-rows: auto auto auto auto auto !important;
+  gap: 20px 80px !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.hero-copy.hero-with-paper > .eyebrow    { grid-column: 1 !important; grid-row: 1 !important; }
+.hero-copy.hero-with-paper > h1          { grid-column: 1 !important; grid-row: 2 !important; }
+.hero-copy.hero-with-paper > .lede       { grid-column: 1 !important; grid-row: 3 !important; }
+.hero-copy.hero-with-paper > .hero-actions { grid-column: 1 !important; grid-row: 4 !important; margin: 12px 0 24px !important; }
+.hero-copy.hero-with-paper > .hero-stats { grid-column: 1 !important; grid-row: 5 !important; padding-top: 24px !important; }
+
+/* Лист — справа, по центру */
+.hero-paper {
+  grid-column: 2 !important;
+  grid-row: 1 / 6 !important;
+  align-self: center !important;
+  justify-self: center !important;
+  width: 440px !important;
+  max-width: 440px !important;
+  transform: rotate(1.3deg) !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.hero-paper:hover { transform: rotate(0.4deg) scale(1.01) !important; }
+
+/* ── Сам лист ── */
+.paper {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 440px !important;
+  min-height: 360px !important;
+  background-color: #fbfaf3 !important;
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 35px,
+      rgba(100, 145, 195, 0.5) 35px,
+      rgba(100, 145, 195, 0.5) 36px
+    ) !important;
+  background-position: 0 54px !important;
+  border: 1px solid rgba(0, 0, 0, 0.07) !important;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 8px 24px -10px rgba(0, 0, 0, 0.18),
+    0 24px 48px -20px rgba(0, 0, 0, 0.15) !important;
+  padding: 28px 74px 24px 28px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.paper::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 56px !important;
+  width: 1.2px !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(210, 90, 90, 0.2) 0%,
+    rgba(210, 90, 90, 0.6) 8%,
+    rgba(210, 90, 90, 0.6) 92%,
+    rgba(210, 90, 90, 0.2) 100%
+  ) !important;
+}
+
+.paper-holes {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  padding: 36px 0 !important;
+}
+.paper-holes span {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  box-shadow:
+    inset 0 1.5px 2px rgba(0, 0, 0, 0.15),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.8) !important;
+  display: block !important;
+}
+
+.paper-inner {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* ═══ ГЛАВНОЕ: текст как заголовок сайта ═══ */
+.paper-sentence {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  font-size: 26px !important;
+  line-height: 36px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  color: #0a0a0a !important;
+  min-height: 108px !important;
+  display: block !important;
+  transition: opacity 0.6s ease !important;
+  text-transform: none !important;
+}
+.paper-sentence.fade-out { opacity: 0 !important; }
+
+.paper-wrong {
+  position: relative !important;
+  display: inline-block !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+}
+.paper-wrong::after {
+  content: "" !important;
+  position: absolute !important;
+  left: -4px !important;
+  right: -4px !important;
+  top: 55% !important;
+  height: 3px !important;
+  background: linear-gradient(to right, #e84d3d 0%, #c42e1e 100%) !important;
+  border-radius: 2px !important;
+  transform: scaleX(0) !important;
+  transform-origin: left !important;
+  transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1) !important;
+  pointer-events: none !important;
+  box-shadow: 0 0 2px rgba(220, 60, 45, 0.5) !important;
+}
+.paper-wrong.struck::after { transform: scaleX(1) !important; }
+
+/* Красная поправка — рукописная Caveat (учитель) */
+.paper-correction {
+  position: absolute !important;
+  bottom: 100% !important;
+  left: 50% !important;
+  margin-bottom: -4px !important;
+  transform: translateX(-50%) translateY(8px) !important;
+  color: #d63a2a !important;
+  font-family: 'Caveat', cursive !important;
+  font-size: 32px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.paper-wrong.corrected .paper-correction {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+.paper-correction::before {
+  content: "✓ " !important;
+  font-family: 'Caveat', cursive !important;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+}
+
+/* Подпись учителя внизу */
+.paper-footer {
+  position: absolute !important;
+  bottom: 14px !important;
+  left: 24px !important;
+  font-family: 'Caveat', cursive !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  color: rgba(170, 55, 45, 0.75) !important;
+  letter-spacing: 0.3px !important;
+  opacity: 0 !important;
+  transform: translateY(4px) !important;
+  transition: opacity 0.5s ease, transform 0.5s ease !important;
+}
+.paper-check.on {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 1024px) {
+  .hero { min-height: auto !important; padding: 40px 20px !important; }
+  .hero-copy.hero-with-paper {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 40px !important;
+  }
+  .hero-paper {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    max-width: 440px !important;
+    transform: rotate(0) !important;
+  }
+  .hero-copy.hero-with-paper > .eyebrow,
+  .hero-copy.hero-with-paper > h1,
+  .hero-copy.hero-with-paper > .lede,
+  .hero-copy.hero-with-paper > .hero-actions,
+  .hero-copy.hero-with-paper > .hero-stats {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+}
+@media (max-width: 640px) {
+  .paper { padding: 22px 58px 20px 22px !important; min-height: 300px !important; }
+  .paper::before { right: 46px !important; }
+  .paper-holes { right: 10px !important; }
+  .paper-holes span { width: 12px !important; height: 12px !important; }
+  .paper-sentence { font-size: 20px !important; line-height: 28px !important; }
+  .paper-correction { font-size: 26px !important; }
+}
