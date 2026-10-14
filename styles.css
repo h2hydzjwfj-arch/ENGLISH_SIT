@@ -2675,3 +2675,51 @@ textarea,
   display:none !important;
 }
 
+
+/* ═══════════ РАСШИРЕННЫЕ СЕКЦИИ ═══════════ */
+.method + .features,
+.features + .method,
+.method + .method {
+  border-top: 1px solid var(--border);
+  padding-top: 80px;
+}
+
+.method-item {
+  padding: 28px 0;
+  align-items: flex-start;
+}
+
+.method-item b {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  padding-top: 4px;
+  line-height: 1.5;
+}
+
+.method-item p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+#faq .method-item b {
+  font-family: var(--sans);
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+#numbers .method-item b {
+  font-family: var(--sans);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  color: var(--text);
+}
