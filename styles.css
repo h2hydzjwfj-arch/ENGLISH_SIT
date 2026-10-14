@@ -1736,8 +1736,8 @@ input[type=tel],
   max-width:min(1680px, 96vw) !important;
   padding:48px clamp(24px, 4vw, 56px) 60px !important;
 }
-.hero-copy{max-width:100% !important}
-.hero h1{font-size:clamp(48px, 7vw, 120px) !important;line-height:1 !important;margin-bottom:20px !important}
+.hero-copy{max-width:100%}
+
 .lede{font-size:17px !important;max-width:720px !important;margin-bottom:28px !important}
 
 /* Features / Method */
@@ -2730,202 +2730,207 @@ textarea,
 
 
 
-/* ═══════════════ HERO PAPER — v2 (зеркало, по центру) ═══════════════ */
+
+
+
+/* ═══════════════════ HERO + PAPER (v3 — рабочий) ═══════════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap');
 
+.hero {
+  padding: 60px 40px 100px !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+}
+
+.hero-copy {
+  max-width: 100% !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+/* Двухколоночный layout — герой слева, лист справа */
 .hero-copy.hero-with-paper {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
-  gap: 60px;
-  align-items: center;
-  max-width: 1400px;
-  min-height: 540px;
-}
-.hero-copy.hero-with-paper > .eyebrow,
-.hero-copy.hero-with-paper > h1,
-.hero-copy.hero-with-paper > .lede,
-.hero-copy.hero-with-paper > .hero-actions,
-.hero-copy.hero-with-paper > .hero-stats {
-  grid-column: 1;
+  display: grid !important;
+  grid-template-columns: 1fr 420px !important;
+  grid-template-rows: auto auto auto auto auto !important;
+  gap: 24px 60px !important;
+  align-items: center !important;
+  max-width: 1400px !important;
 }
 
+.hero-copy.hero-with-paper > .eyebrow { grid-column: 1 !important; grid-row: 1 !important; }
+.hero-copy.hero-with-paper > h1      { grid-column: 1 !important; grid-row: 2 !important; }
+.hero-copy.hero-with-paper > .lede    { grid-column: 1 !important; grid-row: 3 !important; }
+.hero-copy.hero-with-paper > .hero-actions { grid-column: 1 !important; grid-row: 4 !important; margin-bottom: 0 !important; }
+.hero-copy.hero-with-paper > .hero-stats   { grid-column: 1 !important; grid-row: 5 !important; }
+
+/* Лист — справа, все 5 строк */
 .hero-paper {
-  grid-column: 2;
-  grid-row: 1 / -1;
-  align-self: center;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(1.2deg);
+  grid-column: 2 !important;
+  grid-row: 1 / 6 !important;
+  align-self: center !important;
+  justify-self: center !important;
+  width: 420px !important;
+  max-width: 420px !important;
+  transform: rotate(1.2deg) !important;
 }
 
-/* ─── Сам лист — зеркально ─── */
+/* ─── Сам лист ─── */
 .paper {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  min-height: 340px;
-  background-color: #fdfcf5;
-  background-image:
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0px,
-      transparent 31px,
-      rgba(120, 160, 200, 0.45) 31px,
-      rgba(120, 160, 200, 0.45) 32px
-    );
-  background-position: 0 46px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.06),
-    0 12px 32px -12px rgba(0, 0, 0, 0.2);
-  /* зеркало: отступы справа под дырки, слева текст */
-  padding: 26px 70px 22px 26px;
-  overflow: hidden;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 420px !important;
+  min-height: 340px !important;
+  background-color: #fdfcf5 !important;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 31px,
+    rgba(120, 160, 200, 0.45) 31px,
+    rgba(120, 160, 200, 0.45) 32px
+  ) !important;
+  background-position: 0 46px !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 12px 32px -12px rgba(0, 0, 0, 0.2) !important;
+  padding: 26px 70px 22px 26px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
 }
 
-/* красная вертикальная линия поля — справа */
 .paper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 52px;
-  width: 1px;
-  background: rgba(210, 100, 100, 0.55);
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 52px !important;
+  width: 1px !important;
+  background: rgba(210, 100, 100, 0.55) !important;
 }
 
-/* декоративные дырки — справа */
 .paper-holes {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 30px 0;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  padding: 30px 0 !important;
 }
 .paper-holes span {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--bg, #ffffff);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12) !important;
+  display: block !important;
 }
 
-/* ─── Содержимое ─── */
 .paper-inner {
-  position: relative;
-  z-index: 2;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .paper-sentence {
-  font-family: 'Kalam', 'Caveat', cursive;
-  font-size: 26px;
-  line-height: 32px;
-  color: #1f3555;
-  letter-spacing: 0.2px;
-  min-height: 96px;
-  display: block;
-  transition: opacity 0.4s ease;
+  font-family: 'Kalam', 'Caveat', cursive !important;
+  font-size: 26px !important;
+  line-height: 32px !important;
+  color: #1f3555 !important;
+  min-height: 96px !important;
+  display: block !important;
+  transition: opacity 0.4s ease !important;
 }
-.paper-sentence.fade-out {
-  opacity: 0;
-}
+.paper-sentence.fade-out { opacity: 0 !important; }
 
 .paper-wrong {
-  position: relative;
-  display: inline-block;
-  font-family: inherit;
-  color: inherit;
+  position: relative !important;
+  display: inline-block !important;
 }
-
 .paper-wrong::after {
-  content: "";
-  position: absolute;
-  left: -3px;
-  right: -3px;
-  top: 58%;
-  height: 2px;
-  background: #c93b2e;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
-  pointer-events: none;
+  content: "" !important;
+  position: absolute !important;
+  left: -3px !important;
+  right: -3px !important;
+  top: 58% !important;
+  height: 2px !important;
+  background: #c93b2e !important;
+  transform: scaleX(0) !important;
+  transform-origin: left !important;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1) !important;
+  pointer-events: none !important;
 }
-.paper-wrong.struck::after {
-  transform: scaleX(1);
-}
+.paper-wrong.struck::after { transform: scaleX(1) !important; }
 
 .paper-correction {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-bottom: -4px;
-  transform: translateX(-50%) translateY(6px);
-  color: #c93b2e;
-  font-family: 'Caveat', cursive;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 700;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: absolute !important;
+  bottom: 100% !important;
+  left: 50% !important;
+  margin-bottom: -4px !important;
+  transform: translateX(-50%) translateY(6px) !important;
+  color: #c93b2e !important;
+  font-family: 'Caveat', cursive !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 .paper-wrong.corrected .paper-correction {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
 }
 .paper-correction::before {
-  content: "✓ ";
-  font-family: 'Kalam', cursive;
-  font-size: 20px;
-  margin-right: 2px;
+  content: "✓ " !important;
+  font-family: 'Kalam', cursive !important;
+  font-size: 20px !important;
 }
 
 .paper-footer {
-  position: absolute;
-  bottom: 12px;
-  left: 20px;   /* зеркально — слева */
-  font-family: 'Kalam', cursive;
-  font-size: 13px;
-  color: rgba(80, 100, 130, 0.65);
-  letter-spacing: 0.3px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  position: absolute !important;
+  bottom: 12px !important;
+  left: 20px !important;
+  font-family: 'Kalam', cursive !important;
+  font-size: 13px !important;
+  color: rgba(80, 100, 130, 0.65) !important;
+  opacity: 0 !important;
+  transition: opacity 0.4s ease !important;
 }
-.paper-check.on {
-  opacity: 1;
-}
+.paper-check.on { opacity: 1 !important; }
 
+/* ─── Мобильный ─── */
 @media (max-width: 1024px) {
   .hero-copy.hero-with-paper {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    min-height: auto;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 40px !important;
   }
   .hero-paper {
-    grid-column: 1;
-    grid-row: auto;
-    transform: rotate(0);
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    transform: rotate(0) !important;
   }
-  .paper {
-    max-width: 100%;
+  .hero-copy.hero-with-paper > .eyebrow,
+  .hero-copy.hero-with-paper > h1,
+  .hero-copy.hero-with-paper > .lede,
+  .hero-copy.hero-with-paper > .hero-actions,
+  .hero-copy.hero-with-paper > .hero-stats {
+    grid-column: 1 !important;
+    grid-row: auto !important;
   }
 }
 @media (max-width: 640px) {
   .paper {
-    padding: 20px 56px 18px 20px;
-    min-height: 280px;
+    padding: 20px 56px 18px 20px !important;
+    min-height: 280px !important;
   }
-  .paper::before { right: 44px; }
-  .paper-holes { right: 10px; }
-  .paper-holes span { width: 12px; height: 12px; }
-  .paper-sentence { font-size: 22px; line-height: 28px; }
-  .paper-correction { font-size: 20px; }
-  .paper-footer { left: 16px; bottom: 10px; font-size: 12px; }
+  .paper::before { right: 44px !important; }
+  .paper-holes { right: 10px !important; }
+  .paper-holes span { width: 12px !important; height: 12px !important; }
+  .paper-sentence { font-size: 22px !important; line-height: 28px !important; }
+  .paper-correction { font-size: 20px !important; }
 }

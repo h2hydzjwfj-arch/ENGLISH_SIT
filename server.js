@@ -379,4 +379,6 @@ app.get('/api/tts/voices', function(req, res){
 // Robot AI endpoint
 require('./lib/robot')(app, ollamaChat, groqChat);
 
+app.get('/hero-panel.js', function(req,res){ res.sendFile(path.join(ROOT,'hero-panel.js')); });
+
 app.listen(PORT, () => console.log('iomaenglish listening on ' + PORT));
