@@ -2727,7 +2727,10 @@ textarea,
 
 
 
-/* ═══════════════ HERO PAPER (школьный лист США) ═══════════════ */
+
+
+
+/* ═══════════════ HERO PAPER — v2 (зеркало, по центру) ═══════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap');
 
 .hero-copy.hero-with-paper {
@@ -2736,6 +2739,7 @@ textarea,
   gap: 60px;
   align-items: center;
   max-width: 1400px;
+  min-height: 540px;
 }
 .hero-copy.hero-with-paper > .eyebrow,
 .hero-copy.hero-with-paper > h1,
@@ -2747,21 +2751,23 @@ textarea,
 
 .hero-paper {
   grid-column: 2;
-  grid-row: 1 / span 5;
+  grid-row: 1 / -1;
   align-self: center;
-  transform: rotate(-1.2deg);
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(1.2deg);
 }
 
-/* ─── Сам лист ─── */
+/* ─── Сам лист — зеркально ─── */
 .paper {
   position: relative;
   width: 100%;
-  max-width: 440px;
-  min-height: 320px;
-  margin: 0 auto;
+  max-width: 420px;
+  min-height: 340px;
   background-color: #fdfcf5;
   background-image:
-    /* горизонтальные синие линии */
     repeating-linear-gradient(
       to bottom,
       transparent 0px,
@@ -2774,27 +2780,28 @@ textarea,
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.06),
     0 12px 32px -12px rgba(0, 0, 0, 0.2);
-  padding: 22px 26px 18px 70px;
+  /* зеркало: отступы справа под дырки, слева текст */
+  padding: 26px 70px 22px 26px;
   overflow: hidden;
 }
 
-/* красная вертикальная линия поля */
+/* красная вертикальная линия поля — справа */
 .paper::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 52px;
+  right: 52px;
   width: 1px;
   background: rgba(210, 100, 100, 0.55);
 }
 
-/* декоративные дырки для дырокола */
+/* декоративные дырки — справа */
 .paper-holes {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 12px;
+  right: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2823,18 +2830,10 @@ textarea,
   letter-spacing: 0.2px;
   min-height: 96px;
   display: block;
-  padding-top: 0;
   transition: opacity 0.4s ease;
 }
 .paper-sentence.fade-out {
   opacity: 0;
-}
-
-/* ─── Отдельные части предложения ─── */
-.paper-before,
-.paper-after {
-  font-family: inherit;
-  color: inherit;
 }
 
 .paper-wrong {
@@ -2844,7 +2843,6 @@ textarea,
   color: inherit;
 }
 
-/* красная линия зачёркивания */
 .paper-wrong::after {
   content: "";
   position: absolute;
@@ -2862,7 +2860,6 @@ textarea,
   transform: scaleX(1);
 }
 
-/* красное исправление над ошибочным словом */
 .paper-correction {
   position: absolute;
   bottom: 100%;
@@ -2883,8 +2880,6 @@ textarea,
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-
-/* маленькая галочка рядом с correction */
 .paper-correction::before {
   content: "✓ ";
   font-family: 'Kalam', cursive;
@@ -2892,11 +2887,10 @@ textarea,
   margin-right: 2px;
 }
 
-/* ─── Footer листа ─── */
 .paper-footer {
   position: absolute;
   bottom: 12px;
-  right: 20px;
+  left: 20px;   /* зеркально — слева */
   font-family: 'Kalam', cursive;
   font-size: 13px;
   color: rgba(80, 100, 130, 0.65);
@@ -2908,11 +2902,11 @@ textarea,
   opacity: 1;
 }
 
-/* ─── Мобильный ─── */
 @media (max-width: 1024px) {
   .hero-copy.hero-with-paper {
     grid-template-columns: 1fr;
     gap: 40px;
+    min-height: auto;
   }
   .hero-paper {
     grid-column: 1;
@@ -2925,14 +2919,13 @@ textarea,
 }
 @media (max-width: 640px) {
   .paper {
-    padding: 18px 20px 16px 56px;
-    min-height: 260px;
+    padding: 20px 56px 18px 20px;
+    min-height: 280px;
   }
-  .paper-sentence {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  .paper-correction {
-    font-size: 20px;
-  }
+  .paper::before { right: 44px; }
+  .paper-holes { right: 10px; }
+  .paper-holes span { width: 12px; height: 12px; }
+  .paper-sentence { font-size: 22px; line-height: 28px; }
+  .paper-correction { font-size: 20px; }
+  .paper-footer { left: 16px; bottom: 10px; font-size: 12px; }
 }
