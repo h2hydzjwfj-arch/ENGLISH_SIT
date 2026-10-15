@@ -91,15 +91,7 @@
         state.grammarAnswers[state.grammarIdx] = Number(btn.getAttribute('data-i'));
         renderGrammar();
         updateNav();
-        // Авто-переход через 600 мс
-        setTimeout(function(){
-          if (state.grammarIdx < GRAMMAR.length - 1){
-            state.grammarIdx++;
-            renderGrammar();
-          } else {
-            show('reading');
-          }
-        }, 200);
+        // Переход выполняется только кнопкой «Следующий вопрос» — без неожиданных скачков.
       });
     });
     updateNav();
@@ -122,11 +114,7 @@
           state.readingAnswers[qi] = Number(btn.getAttribute('data-i'));
           renderReading();
           updateNav();
-          // Если все вопросы отвечены — авто-переход
-          var allAnswered = state.readingAnswers.every(function(a){ return a != null; });
-          if (allAnswered){
-            setTimeout(function(){ show('listening'); }, 200);
-          }
+          // Пользователь сам переходит дальше кнопкой «Далее».
         });
       });
     });
@@ -145,7 +133,7 @@
         state.listeningAnswer = Number(btn.getAttribute('data-i'));
         renderListening();
         updateNav();
-        setTimeout(function(){ show('writing'); }, 200);
+        // Переход к следующему разделу — по кнопке «Далее».
       });
     });
   }
